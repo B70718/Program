@@ -9,20 +9,41 @@
            
 
 
-    var say = function(message){console.log(message);};
+    var say = function(message){console.log(message);
+    
+    return (iceCreamNames)};
 
     var familyNames = ["Mommy", "Daddy","Sarah","Rosella"];
     var minutesPerVisit=[45,30,25,40];
-    var iceCreamNames = funtion(whoIceCream)
+    var iceCreamNames = function(whoIceCream){     
     
-    {var whichFamilyMember = familyNames[whoIceCream];
-    say (iceCreamNames)[0]
-        
-    }
+    var familyNames = minutesPerVisit[whoIceCream],
     
-    say ("I am working on Array's and funtions");
+    minutesPer = minutesPerVisit[IceCreamNumber];
+    
+    
+    
+  say (familyNames)[0]+"wants us to visit Far better ice cream" + familyNames + " for"  + minutesPerVisit + " minutes. ";
+           for (var minutes = 0; minutes < minutesPer; minutes +=5) {
+            var minutesRemain = minutesPer - minutes;
+            
+            say (" We have " + minutesRemain + " minutes left " + minutes + " minutes have past");
+            //how many minits have past and how many remaining minutes
+           }
+           
+           say ("We finished  " + familyNames + ".");
+    };
+    for (var IceCreamNumber = 0; IceCreamNumber < familyNames.length;
+         IceCreamNumber++) {
+        iceCreamNames(IceCreamNumber);
+        //code
+    };
+         
+    
+    
+    //say ("I am working on Array's and funtions")};
 
-    var getstring = function ()   
+    //var getstring = function ()   
 
     //m//yArray[0] = "Icecream";
     //myArray[1] = "girls";
@@ -30,6 +51,6 @@
 
 
     //say ("My family loves " + myArray[0] + " exspesialy my " + myArray[1] + " they will even put on a " + myArray[2] + "to get some. Yummy!");
-    say ("I hope this works soon. I have a long way to go");
+   //say ("I hope this works soon. I have a long way to go");
 
-    family();
+   // whichFamilyMember();
