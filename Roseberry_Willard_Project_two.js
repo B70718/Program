@@ -1,16 +1,37 @@
 //alert("JavaScript works!");
 
-    var walk = "\"RiverParkWay\" ";
-    var myFamilyName = "Roseberry's";
-    var numOfMiles = 2;
-    var strollerExcapes = 6;
-    var daughter = "\"Rosella\" ";
+      var walk = "\"RiverParkWay\" ";
+      var myFamilyName = "Roseberry's";
+      var numOfMiles = 10;
+      var strollerExcapes = 6;
+      var daughter = "\"Rosella\" ";
+      var i;
+      reverse = false;
 
-
-         var ourSmartPhones = new Array();
-         phone [0] = "Note 2";
-         phone [1] = "Galaxcy";
-         phone [2] = ""
+      var ourSmartPhones = new Array();
+          ourSmartPhones [0] = "Note 2";
+          ourSmartPhones [1] = "Galaxcy one";
+          ourSmartPhones [2] = "Samsung Galaxcy two";
+          ourSmartPhones [3] = "Samsung Exsibit";
+          
+     function RoselaRunsAway()
+     { if (!reverse) for (i=0; i < numOfMiles; numOfMiles++) log(i); // Count up{
+        //code
+     }
+                   }
+            //code
+        
+     
+     
+     
+   
+    
+        //code
+     
+        
+        
+        //code
+     
 
 
    /* var say = function(message){console.log(message);
