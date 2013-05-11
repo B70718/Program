@@ -20,9 +20,13 @@
           ourSmartPhones [2] = "Samsung Galaxcy two";
           ourSmartPhones [3] = "Samsung Exsibit";
           
+     function both (a,b) {
+        return  a,b
+        //returning a+b
+     }
      
-     
-     
+     var results = both (numOfMiles,strollerExcapes)
+     say (" Rosella ran " + numOfMiles + " miles and had " + strollerExcapes +" stroller excapes");
      
      /*function RoselaSaysHi(name){say(" Hello, " + name)
      return(name);
