@@ -4,12 +4,16 @@
     var myFamilyName = "Roseberry's";
     var numOfMiles = 2;
     var strollerExcapes = 6;
+    var daughter = "\"Rosella\" ";
 
 
-           
+         var ourSmartPhones = new Array();
+         phone [0] = "Note 2";
+         phone [1] = "Galaxcy";
+         phone [2] = ""
 
 
-    var say = function(message){console.log(message);
+   /* var say = function(message){console.log(message);
     
     return (iceCreamNames)};
 
@@ -37,8 +41,7 @@
          IceCreamNumber++) {
         iceCreamNames(IceCreamNumber);
         //code
-    };
-         
+    };*/
     
     
     //say ("I am working on Array's and funtions")};
