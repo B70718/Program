@@ -5,7 +5,13 @@
       var numOfMiles = 10;
       var strollerExcapes = 6;
       var daughter = "\"Rosella\" ";
-      var i;
+      var i;   
+      var say = function(message){console.log(message);
+      }
+      
+      
+      
+      
       reverse = false;
 
       var ourSmartPhones = new Array();
@@ -14,11 +20,19 @@
           ourSmartPhones [2] = "Samsung Galaxcy two";
           ourSmartPhones [3] = "Samsung Exsibit";
           
-     function RoselaRunsAway()
-     { if (!reverse) for (i=0; i < numOfMiles; numOfMiles++) log(i); // Count up{
-        //code
-     }
-                   }
+     
+     
+     
+     
+     /*function RoselaSaysHi(name){say(" Hello, " + name)
+     return(name);
+      }
+      
+      RoselaSaysHi();  */
+     
+        
+     
+                   
             //code
         
      
