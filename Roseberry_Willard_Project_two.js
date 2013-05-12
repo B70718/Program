@@ -4,6 +4,7 @@
       var walk = "\"RiverParkWay\" ";
       var myFamilyName = "Roseberry's";
       var numOfMiles = 10;
+      var numberOfMesses = 5;
       var strollerExcapes = 2;
       var daughter = "\"Rosella\" ";
       var bottlesOfWater = 50;   
@@ -23,7 +24,7 @@
           
      function both (numOfMiles, numberOfMesses)
      {
-        return  numOfMiles, strollerExcapes
+        return  numberOfMesses + numOfMiles
         //returning numOfMiles and strollerExcapes
      }
      
@@ -51,26 +52,42 @@
      
      function water (bottlesOfWater, numberOfMesses)
      {
-        return  numOfMiles, strollerExcapes
+        return  bottlesOfWater, numberOfMesses
         //returning numOfMiles and strollerExcapes
      }
      
      var results = both (numOfMiles,numberOfMesses)
      
-     if ( goodBehavior === true && numOfMesses === 0)
+     if ( goodBehavior === true && numberOfMesses === 0)
       
      {
      
      say (" It is "+ goodBehavior + " that Rosella is asleep because she is running  " + numOfMiles + " miles and is makeing " + numberOfMesses +" messes.")
+     
+     }
+      else if (goodBehavior === false && numOfMesses > 0)
+      
+      say (" Rosella it is + goodBehavior + that Rosella is haveing good behavior")
+     
+     function good(strollerExcapes) {
+        //code
      }
      
-      else if (goodBehavior === false && numOfMesses > 0) 
-            //code
-        
-        
-            //code
-        
-        
+     
+     function offOrOn(bottlesOfWater,numberOfMesses) {
+      return bottlesOfWater + numberOfMesses  //code
+     }
+     
+     if (BottlesOfWater && numberOfMesses < 500 && true)
+     {say(" It is " + goodBehavior + "that " + BottlesOfWater  + " and numberOfMesses+  make life easyer to handle.")
+        //code
+     }
+     else if
+     (BottlesOfWater && numberOfMesses > 500 && false)
+     {say(" It is false that " +  bottlesOfWater + " bottlesOfWater are easy to handle with Rosella")
+                                      
+                                      
+                                    
      
      
      
@@ -148,4 +165,4 @@
     //say ("My family loves " + myArray[0] + " exspesialy my " + myArray[1] + " they will even put on a " + myArray[2] + "to get some. Yummy!");
    //say ("I hope this works soon. I have a long way to go");
 
-   // whichFamilyMember();
+  
