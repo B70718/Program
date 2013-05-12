@@ -1,5 +1,6 @@
-//alert("JavaScript works!");
+//Willard Roseberry
 
+      var goodBehavior = true;
       var walk = "\"RiverParkWay\" ";
       var myFamilyName = "Roseberry's";
       var numOfMiles = 10;
@@ -20,37 +21,68 @@
           ourSmartPhones [2] = "Samsung Galaxcy two";
           ourSmartPhones [3] = "Samsung Exsibit";
           
-     function both (numOfMiles, strollerExcapes) {
+     function both (numOfMiles, numberOfMesses)
+     {
         return  numOfMiles, strollerExcapes
         //returning numOfMiles and strollerExcapes
      }
      
-     var results = both (numOfMiles,strollerExcapes)
+     var results = both (numOfMiles,numberOfMesses)
      
-     say (" Rosella ran " + numOfMiles + " miles and had " + strollerExcapes +" stroller excapes")
+     say (" Rosella ran " + numOfMiles + " miles and had " + numberOfMesses +" stroller excapes")
      
      
-     if (bottlesOfWater >= numOfMiles && strollerExcapes)
+     if (bottlesOfWater >= numOfMiles && numberOfMesses)
      {    
            
     
          
-         say (" Rosella has drank to much water ")
-    }
+         say (" Rosella has drank to much water and pored less water on the floor. ")
+     }
           
-          else if (bottlesOfWater <= numOfMiles && strollerExcapes) 
+          else if (bottlesOfWater <= numOfMiles && numberOfMesses) 
             //code
           
-          {
-          say (" Rosella has drank less water")
+     {
+          say (" Rosella has drank less water and pored more water on the floor.")
           
-          }
+     }
+     
+     
+     function water (bottlesOfWater, numberOfMesses)
+     {
+        return  numOfMiles, strollerExcapes
+        //returning numOfMiles and strollerExcapes
+     }
+     
+     var results = both (numOfMiles,numberOfMesses)
+     
+     if ( goodBehavior === true && numOfMesses === 0)
+      
+     {
+     
+     say (" It is "+ goodBehavior + " that Rosella is asleep because she is running  " + numOfMiles + " miles and is makeing " + numberOfMesses +" messes.")
+     }
+     
+      else if (goodBehavior === false && numOfMesses > 0) 
+            //code
+        
+        
+            //code
+        
+        
+     
+     
+     
+     
+     
+     
         //code
         
           
      
-     /*function RoselaSaysHi(name){say(" Hello, " + name)
-     return(name);
+      /*function RoselaSaysHi(name){say(" Hello, " + name)
+      return(name);
       }
       
       RoselaSaysHi();  */
