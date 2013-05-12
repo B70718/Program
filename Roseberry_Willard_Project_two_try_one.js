@@ -21,28 +21,40 @@
         //Writing in psudeo code first to figure out the logic
         
         // Bottles, Apples and aranges for logic
-        
+        var say = function(message) console.log(message);
         var tree = "Apple" +" Orange" + "Banna";
         var juiceBoxes = 5;
-        
+        var          a = 5;
+        var          b = 5;
         var ourSmartPhones = new Array();
         ourSmartPhones [0] = "Note 2";
         ourSmartPhones [1] = "Galaxcy one";
         ourSmartPhones [2] = "Samsung Galaxcy two";
         ourSmartPhones [3] = "Samsung Exsibit";
         
-        function myProcedure(juiceBoxes) 
+        function myProcedure(a , b) 
      {
         return  a + b;
         //returning numOfMiles and strollerExcapes
      }
      
-     
         if (a === b) {
+            
+            say (a + "a is equal to b" + b)
+            //code
+        }
+        
+        else if (a < b) {
+            
+            say (a + "a is less than b" +b)
             //code
         }
      
-        
+        else if (a > b) {
+            
+            say (a + "a is greater than b +b")
+            //code
+        }
       
          
       /*  function both (numOfMiles, numberOfMesses)
