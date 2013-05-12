@@ -10,36 +10,34 @@
       var bottlesOfWater = 50;   
       var say = function(message) console.log(message);
       
-      
-      
-      
-      
       reverse = false;
 
       var ourSmartPhones = new Array();
-          ourSmartPhones [0] = "Note 2";
-          ourSmartPhones [1] = "Galaxcy one";
-          ourSmartPhones [2] = "Samsung Galaxcy two";
-          ourSmartPhones [3] = "Samsung Exsibit";
-          
-     function both (numOfMiles, numberOfMesses)
+        ourSmartPhones [0] = "Note 2";
+        ourSmartPhones [1] = "Galaxcy one";
+        ourSmartPhones [2] = "Samsung Galaxcy two";
+        ourSmartPhones [3] = "Samsung Exsibit";
+      
+         
+        function both (numOfMiles, numberOfMesses)
      {
+        say ("Rosella has ran " + numOfMiles + " and made " + numberOfMesses + " number of messes")
         return  numberOfMesses + numOfMiles
-        //returning numOfMiles and strollerExcapes
+        //returning numOfMiles and numberOfMesses
      }
      
-     var results = both (numOfMiles,numberOfMesses)
+      var results = both (numOfMiles,numberOfMesses)
+      
+      //both()
      
-     say (" Rosella ran " + numOfMiles + " miles and had " + numberOfMesses +" stroller excapes")
+        say (" Rosella ran " + numOfMiles + " miles and had " + numberOfMesses +" stroller excapes")
      
-     
-     if (bottlesOfWater >= numOfMiles && numberOfMesses)
-     {    
-           
-    
+       // boolean funtion
+      if (bottlesOfWater >= numOfMiles && numberOfMesses)
+      {    
          
          say (" Rosella has drank to much water and pored less water on the floor. ")
-     }
+      }
           
           else if (bottlesOfWater <= numOfMiles && numberOfMesses) 
             //code
@@ -48,7 +46,6 @@
           say (" Rosella has drank less water and pored more water on the floor.")
           
      }
-     
      
      function water (bottlesOfWater, numberOfMesses)
      {
@@ -73,20 +70,21 @@
         //code
      }
      
-     
-     function offOrOn(bottlesOfWater,numberOfMesses) {
+     function offOrOn(bottlesOfWater,numberOfMesses)
+     {
       return bottlesOfWater + numberOfMesses  //code
      }
      
-     if (BottlesOfWater && numberOfMesses < 500 && true)
-     {say(" It is " + goodBehavior + "that " + BottlesOfWater  + " and numberOfMesses+  make life easyer to handle.")
+     if (bottlesOfWater && numberOfMesses < 500 && true)
+     {say(" It is " + goodBehavior + "that " + bottlesOfWater  + " and numberOfMesses+  make life easyer to handle.")
         //code
      }
-     else if
-     (BottlesOfWater && numberOfMesses > 500 && false)
+     else if         //code
+     
+     (bottlesOfWater && numberOfMesses > 500 && false)
      {say(" It is false that " +  bottlesOfWater + " bottlesOfWater are easy to handle with Rosella")
                                       
-                                      
+     }                                
                                     
      
      
