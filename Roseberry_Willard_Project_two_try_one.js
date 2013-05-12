@@ -1,6 +1,6 @@
 //Willard Roseberry
 
-      var goodBehavior = true;
+     /* var goodBehavior = true;
       var walk = "\"RiverParkWay\" ";
       var myFamilyName = "Roseberry's";
       var numOfMiles = 10;
@@ -16,10 +16,36 @@
         ourSmartPhones [0] = "Note 2";
         ourSmartPhones [1] = "Galaxcy one";
         ourSmartPhones [2] = "Samsung Galaxcy two";
+        ourSmartPhones [3] = "Samsung Exsibit"; */
+        
+        //Writing in psudeo code first to figure out the logic
+        
+        // Bottles, Apples and aranges for logic
+        
+        var tree = "Apple" +" Orange" + "Banna";
+        var juiceBoxes = 5;
+        
+        var ourSmartPhones = new Array();
+        ourSmartPhones [0] = "Note 2";
+        ourSmartPhones [1] = "Galaxcy one";
+        ourSmartPhones [2] = "Samsung Galaxcy two";
         ourSmartPhones [3] = "Samsung Exsibit";
+        
+        function myProcedure(juiceBoxes) 
+     {
+        return  a + b;
+        //returning numOfMiles and strollerExcapes
+     }
+     
+     
+        if (a === b) {
+            //code
+        }
+     
+        
       
          
-        function both (numOfMiles, numberOfMesses)
+      /*  function both (numOfMiles, numberOfMesses)
      {
         say ("Rosella has ran " + numOfMiles + " and made " + numberOfMesses + " number of messes")
         return  numberOfMesses + numOfMiles
@@ -118,8 +144,8 @@
         //code
      
 
-
-   /* var say = function(message){console.log(message);
+/*
+    var say = function(message){console.log(message);
     
     return (iceCreamNames)};
 
@@ -160,6 +186,6 @@
 
 
     //say ("My family loves " + myArray[0] + " exspesialy my " + myArray[1] + " they will even put on a " + myArray[2] + "to get some. Yummy!");
-   //say ("I hope this works soon. I have a long way to go");
+   //say ("I hope this works soon. I have a long way to go");   
 
   
