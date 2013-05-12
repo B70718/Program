@@ -65,7 +65,7 @@
             say (apples + "apples is greater than pears + pears")
             //code
         }
-        
+        //Boolan funtion
            function chase( apples , pears)
         {
             
@@ -100,13 +100,38 @@
             //Boolan funtion
         }
         
-        else if (apples >= pears && Rosella) {
+        else if (apples >= pears && Rosella)
+        {
             
             apples = false
             pears = false
             Rosella = false
             //Boolan funtion
         }
+        var juiceBoxes = 5
+        
+        function oneNumber(juiceBoxes)
+        {
+          return juiceBoxes
+            //Number funtion
+        }
+           var x = 1;
+           var answer = oneNumber
+           say (" We have " + juiceBoxes + " juiceBoxes left");
+           
+           while (juiceBoxes < 10)
+           {
+            
+            (juiceBoxes = juiceBoxes - x);
+            say (" We are down to " + juiceBoxes + " juiceBoxes");
+            
+        //50 juicdboxes down to one
+        }
+            
+           
+           
+        
+        
         
       
          
