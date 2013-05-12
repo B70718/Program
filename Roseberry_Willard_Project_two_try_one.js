@@ -23,38 +23,91 @@
         // Bottles, Apples and aranges for logic
         var say = function(message) console.log(message);
         var tree = "Apple" +" Orange" + "Banna";
+        var Rosella    = 5;
         var juiceBoxes = 5;
-        var          a = 5;
-        var          b = 5;
+        var          apples = 5;
+        var          pears = 5;
         var ourSmartPhones = new Array();
         ourSmartPhones [0] = "Note 2";
         ourSmartPhones [1] = "Galaxcy one";
         ourSmartPhones [2] = "Samsung Galaxcy two";
         ourSmartPhones [3] = "Samsung Exsibit";
         
-        function myProcedure(a , b) 
-     {
-        return  a + b;
-        //returning numOfMiles and strollerExcapes
-     }
-     
-        if (a === b) {
+        
+        function myProcedure(apples , pears) 
+        {
             
-            say (a + "a is equal to b" + b)
+        return  apples + pears;
+        
+        }
+        
+        var answer = myProcedure (apples, pears)
+        say ( answer + "is the amount of "+ apples + "apples " + " and" + pears + " pears")
+     
+        if (apples === pears)
+        {
+            
+            say (apples + "apples is equal to pears" + pears)
+            
             //code
         }
         
-        else if (a < b) {
+        else if (apples < pears)
+        {
             
-            say (a + "a is less than b" +b)
+            say (apples + "apples is less than pears" + pears)
             //code
         }
      
-        else if (a > b) {
+            else if (apples > pears)
+        {
             
-            say (a + "a is greater than b +b")
+            say (apples + "apples is greater than pears + pears")
             //code
         }
+        
+           function chase( apples , pears)
+        {
+            
+            return apples + pears
+            
+        }
+            var answer = chase( apples , pears)
+            
+           if (apples === pears && Rosella)
+           
+           say ( apples + " and " + pears );
+           
+        {
+           say (" apples is equal to pears" + "my Boolan")
+           
+            
+            apples = true
+            pears = true
+            Rosella = true
+            
+          //Boolan funtion
+           
+        }
+    
+        
+        else if (apples <= pears && Rosella)
+        
+        {  
+            apples = false
+            pears = false
+            Rosella = false
+            //Boolan funtion
+        }
+        
+        else if (apples >= pears && Rosella) {
+            
+            apples = false
+            pears = false
+            Rosella = false
+            //Boolan funtion
+        }
+        
       
          
       /*  function both (numOfMiles, numberOfMesses)
