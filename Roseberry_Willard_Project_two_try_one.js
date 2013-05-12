@@ -42,12 +42,12 @@
         }
         
         var answer = myProcedure (apples, pears)
-        say ( answer + "is the amount of "+ apples + "apples " + " and" + pears + " pears")
+        say ( answer + " is the amount of "+ apples + " apples" + " and " + pears + " pears")
      
         if (apples === pears)
         {
             
-            say (apples + "apples is equal to pears" + pears)
+            say (apples + " apples is the same amount as " + pears + " pears")
             
             //code
         }
@@ -75,16 +75,16 @@
             var answer = chase( apples , pears)
             
            if (apples === pears && Rosella)
-           
-           say ( apples + " and " + pears );
-           
-        {
-           say (" apples is equal to pears" + "my Boolan")
-           
+        {  
             
             apples = true
             pears = true
             Rosella = true
+            
+             say ( apples + " and " + pears );
+           
+        
+           say ( "It is " + apples + " that " + Rosella + "apples " + "is equal to " + Rosella + "pears" + "my Boolan")
             
           //Boolan funtion
            
