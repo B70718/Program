@@ -3,11 +3,11 @@
       var walk = "\"RiverParkWay\" ";
       var myFamilyName = "Roseberry's";
       var numOfMiles = 10;
-      var strollerExcapes = 6;
+      var strollerExcapes = 2;
       var daughter = "\"Rosella\" ";
-      var i;   
-      var say = function(message){console.log(message);
-      }
+      var bottlesOfWater = 50;   
+      var say = function(message) console.log(message);
+      
       
       
       
@@ -20,13 +20,34 @@
           ourSmartPhones [2] = "Samsung Galaxcy two";
           ourSmartPhones [3] = "Samsung Exsibit";
           
-     function both (a,b) {
-        return  a,b
-        //returning a+b
+     function both (numOfMiles, strollerExcapes) {
+        return  numOfMiles, strollerExcapes
+        //returning numOfMiles and strollerExcapes
      }
      
      var results = both (numOfMiles,strollerExcapes)
-     say (" Rosella ran " + numOfMiles + " miles and had " + strollerExcapes +" stroller excapes");
+     
+     say (" Rosella ran " + numOfMiles + " miles and had " + strollerExcapes +" stroller excapes")
+     
+     
+     if (bottlesOfWater >= numOfMiles && strollerExcapes)
+     {    
+           
+    
+         
+         say (" Rosella has drank to much water ")
+    }
+          
+          else if (bottlesOfWater <= numOfMiles && strollerExcapes) 
+            //code
+          
+          {
+          say (" Rosella has drank less water")
+          
+          }
+        //code
+        
+          
      
      /*function RoselaSaysHi(name){say(" Hello, " + name)
      return(name);
