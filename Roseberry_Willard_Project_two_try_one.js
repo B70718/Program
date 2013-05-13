@@ -1,7 +1,7 @@
 //Willard Roseberry
-
-     
-        
+//Sdi
+//5th Month May 12, 2013
+  
         // Bottles, Apples and aranges for logic
         var say = function(message) console.log(message);
         var tree = "Apple" +" Orange" + "Banna";
@@ -16,72 +16,55 @@
         ourSmartPhones [3] = "Samsung Exsibit";
        
         function myProcedure(apples , pears) 
-        {
-            
+        {    
         return  apples + pears;
-        
-        }
-        
+        }  
         var answer = myProcedure (apples, pears)
-        say ( answer + " is the amount of "+ apples + " apples" + " and " + pears + " pears")
+        say ( answer + " is the amount of "+ apples + " apples" + " and " + pears + " pears.")
      
         if (apples === pears)
-        {
-            
-            say (apples + " apples is the same amount as " + pears + " pears")
+        {   
+            say (apples + " apples is the same amount as " + pears + " pears.")
             
             //puting a string together for the procedure
         }
-        
         else if (apples < pears)
         {
             
             say (apples + "apples is less than pears" + pears)
             //compareing apples to pears
         }
-     
             else if (apples > pears)
         {
-            
             say (apples + "apples is greater than pears + pears")
             //If apples greater than pears
         }
-        //Boolan funtion
+           //Boolan funtion
            function chase( apples , pears)
         {
-            
-            return apples + pears
-            
+            return apples + pears  
         }
             var answer = chase( apples , pears)
             
-           if (apples === pears && Rosella)
-        {  
-            
-            apples = true
+            if (apples === pears && Rosella)
+        {              
+           apples = true
             pears = true
             Rosella = true
             
-             say ( apples + " and " + pears );
-        
-           say ( "It is " + apples + " that " + Rosella + "apples " + "is equal to " + Rosella + "pears" + "my Boolan")
+            say ("It is " + apples + " that Rosella loves apples " + " and " + pears + " that she loves " + " pears.");
             
-          //Boolan funtion
-           
-        }
-        
-        else if (apples <= pears && Rosella)
-        
+           //Boolan funtion 
+        } 
+            else if (apples <= pears && Rosella)
         {  
             apples = false
             pears = false
             Rosella = false
             //Boolan funtion
         }
-        
             else if (apples >= pears && Rosella)
-        {
-            
+        {   
             apples = false
             pears = false
             Rosella = false
@@ -99,13 +82,10 @@
             say (" We have " + juiceBoxes + " juiceBoxes left");
           
             while (juiceBoxes >= 1)
-        {
-            
+        { 
             juiceBoxes = juiceBoxes - 1;
-            say (" We are down to " + juiceBoxes + " juiceBoxes");
-           
+            say (" We are down to " + juiceBoxes + " juiceBoxes");  
         }
-               
             if (juiceBoxes === 0)
         {   say ("Time to buy more juiceBoxes")
                
@@ -122,6 +102,7 @@
             //string funtion
         
             say ( "It is "+ Rosella + " that Rosella has " + juiceBoxes + " juiceboxes in the house.")
+            return (Rosella , juiceBoxes)
         }
             //50 juiceboxes down to zero
            
@@ -142,9 +123,11 @@
             say (ourSmartPhones + "our Smart Phones. ")
             say (i + " is the number " + a + " is 10 times the number ") 
         {
-            say("our smart phones are working " +  ourSmartPhones  + " Working ")
-            //code
-            
+            say("our smart phones are working " +  ourSmartPhones  + " is Working ")
+            //puting a string together for the array   
         }
+        say (apples + " apples" + pears + " pears " + juiceBoxes + " juiceBoxes" + array + " array" + Rosella + " Rosella")
+        
+        
     
      
