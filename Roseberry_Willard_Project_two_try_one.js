@@ -124,10 +124,24 @@
             
             juiceBoxes = juiceBoxes - 1;
             say (" We are down to " + juiceBoxes + " juiceBoxes");
+        }   
+            if (juiceBoxes === 0)
+        {  say ("Time to buy more juiceBoxes")
+        
+            juiceBoxes = 50;
+             say ("We now have " + juiceBoxes + " In the house")   //code
+        }
+            
+            else if (juiceBoxes < 50)
+        {   say ("We did not buy enough juiceBoxes")
+                //code
+        }
+                //code
+            
            
             
         //3 juiceboxes down to one
-        }
+        
             
            
            
