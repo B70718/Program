@@ -108,7 +108,7 @@
             Rosella = false
             //Boolan funtion
         }
-        var juiceBoxes = 5
+        var juiceBoxes = 3
         
         function oneNumber(juiceBoxes)
         {
@@ -119,13 +119,14 @@
            var answer = oneNumber
            say (" We have " + juiceBoxes + " juiceBoxes left");
            
-           while (juiceBoxes < 10)
-           {
+          while (juiceBoxes >= 1)
+        {
             
-            (juiceBoxes = juiceBoxes - x);
+            juiceBoxes = juiceBoxes - 1;
             say (" We are down to " + juiceBoxes + " juiceBoxes");
+           
             
-        //50 juicdboxes down to one
+        //3 juiceboxes down to one
         }
             
            
