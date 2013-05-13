@@ -112,33 +112,38 @@
         
         function oneNumber(juiceBoxes)
         {
-          return juiceBoxes
+        return juiceBoxes
             //Number funtion
         }
            var x = 1;
            var answer = oneNumber
            say (" We have " + juiceBoxes + " juiceBoxes left");
-           
+          
           while (juiceBoxes >= 1)
         {
             
             juiceBoxes = juiceBoxes - 1;
             say (" We are down to " + juiceBoxes + " juiceBoxes");
-        }   
+           
+        }
+        
+        
             if (juiceBoxes === 0)
         {  say ("Time to buy more juiceBoxes")
-        
-            juiceBoxes = 50;
+               
+            juiceBoxes = 2 * 25;
              say ("We now have " + juiceBoxes + " In the house")   //code
+             
         }
             
             else if (juiceBoxes < 50)
         {   say ("We did not buy enough juiceBoxes")
                 //code
+
         }
-                //code
-            
-           
+          
+          
+         
             
         //3 juiceboxes down to one
         
