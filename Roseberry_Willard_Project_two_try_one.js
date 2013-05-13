@@ -141,13 +141,28 @@
                 //code
 
         }
+        
+      
           
-          
+           function string(Rosella, juiceBoxes)
+           
+           {
+            say ( Rosella + "and " + juceBoxes + " have a lot in common")
+            //string funtion
+            return string
+          }
+        
+           say ( "It is "+ Rosella + " that Rosella has " + juiceBoxes + " juiceboxes in the house.")
          
             
         //3 juiceboxes down to one
-        
             
+           var          apples = 5;
+           var          pears = 5;
+           
+           say ("It is " + Rosella + " that " + " Rosella loves to drink " + juiceBoxes + " juiceBoxes.")
+        
+           
            
            
         
