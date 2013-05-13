@@ -146,16 +146,17 @@
           
            function string(Rosella, juiceBoxes)
            
-           {
+        {
             say ( Rosella + "and " + juceBoxes + " have a lot in common")
             //string funtion
-            return string
-          }
-        
+           // return string
+    
+        //}
            say ( "It is "+ Rosella + " that Rosella has " + juiceBoxes + " juiceboxes in the house.")
          
-            
-        //3 juiceboxes down to one
+            // return string
+        }
+        //50 juiceboxes down to zero
             
            var          apples = 5;
            var          pears = 5;
@@ -163,8 +164,30 @@
            say ("It is " + Rosella + " that " + " Rosella loves to drink " + juiceBoxes + " juiceBoxes.")
         
            
+           function array(juiceBoxes, ourSmartPhones)
+           {
+            say (juiceBoxes + " and " + ourSmartPhones + " are really nice! ")
+            //code
+            
+            return array()
            
+           } 
            
+          for (var i = 0;
+               i < ourSmartPhones;
+               i++)
+          say (ourSmartPhones + "our Smart Phones. ")
+          {
+            say("our smart phones are working " +  ourSmartPhones  + "Working ")
+            //code
+            
+          }
+          
+        
+          
+        
+          
+          
         
         
         
