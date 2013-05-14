@@ -43,7 +43,7 @@
      var trueOrFalse = function (walked , stayedHome) 
 	 {
 	 if (walked === stayedHome)
-	 say (" We can not walk on the Riverparkway and stay home at the same time.")
+	 say (" We can not walk on the Riverparkway and stay home at the     same time.")
 	 
 	 else if
 	    
@@ -61,8 +61,67 @@
 	 trueOrFalse(true, false)
 	 
 	 //////Number Funtion////////////////////////
-	   
-	  
+	 var x = 1
+	 var juiceBoxes = 3 
+	 var oneNumber = function (juiceBoxes)
+	 
+	 { say (" We have " + juiceBoxes + " juiceboxes left")
+	 while (juiceBoxes >= 1)
+        { 
+            juiceBoxes = juiceBoxes - 1;
+            say (" We are down to " + juiceBoxes + " juiceBoxes");  
+        }
+            if (juiceBoxes === 0)
+        {   say ("Time to buy more juiceBoxes")
+               
+            juiceBoxes = 2 * 25;
+            say ("We now have " + juiceBoxes + " In the house")   //code    
+        }
+            else if (juiceBoxes < 50)
+        {   say ("We did not buy enough juiceBoxes")
+                //Checking to see if enough juiceBoxes 
+        }
+           function string(Rosella, juiceBoxes)  
+        {
+            say ( Rosella + "and " + juceBoxes + " have a lot in common")
+            //string funtion
+        
+            say ( "It is "+ Rosella + " that Rosella has " + juiceBoxes + " juiceboxes in the house.")
+            return (Rosella , juiceBoxes)
+        }
+            //50 juiceboxes down to zero
+           // Main code
+            say ("It is Rosella " + "that " + "loves to drink " + juiceBoxes + " juiceBoxes.") 
+	 
+	 }
+	 
+	 oneNumber(juiceBoxes);
+	 
+	 
+	// String Function////////////////////
+	Rosella = "Rosella"
+	juiceBoxes = "juiceBoxes"
+	var string = function(Rosella, juiceBoxes)
+	{say ( Rosella + "and " + juceBoxes + " have a lot in common")
+            //string funtion
+        
+            say ( "It is "+ Rosella + " that Rosella has " +           juiceBoxes + " juiceboxes in the house.")
+            return (Rosella , juiceBoxes)
+        }
+            //50 juiceboxes down to zero
+           
+            say ("It is " + Rosella + " that " + " Rosella loves to drink " + juiceBoxes + " juiceBoxes.")
+           
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	 
 	 
 		 
 
