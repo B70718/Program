@@ -2,36 +2,69 @@
 //Sdi
 //5th Month May 12, 2013
   
-        //Say function
+     //Say function for console.log
      var say = function(message)
     { console.log(message);
     }
 	
-	  //Procedure funtion
-	
+  //Varible funtion
 	var inchesOfRain = 2
 	var hours = 2
 	var milesPerhour = 2
-	
-	var howLong = function (h, milesPerhour, inchesOfRain) {
-		var long = (h) * (milesPerhour);
-		say ("We walked " + h + " hours" + " at " + milesPerhour +" miles per hour " + "which is a total of " + long + " miles " + "walked" + " in" + inchesOfRain + " inchesOfRain")
+		
+  //Procedure funtion
+    var howLong = function (h, milesPerhour, inchesOfRain) {
+	var long = (h) * (milesPerhour);
+	say ("We walked " + h + " hours" + " at " + milesPerhour +"       miles per hour " + "which is a total of " + long + " miles "        + "walked" + " in" + inchesOfRain + " inchesOfRain")
 		say ( h ) + "this is the number h";
 		
+		// h is how many hours walked
+		
 		if (h ===  1) {
-	  say (" We have walked for one " + h + " hour so far " + " in " +  inchesOfRain + " Inches of rain ")
+	   say (" We have walked for one " + h + " hour so far " + " in "       +  inchesOfRain + " Inches of rain ")
 	  }
 	     
 		 else if (h < 1){
-		say ("We have only walked for " + h + " of a mile in "+ inchesOfRain + " inches of rain")	 }	
+		say ("We have only walked for " + h + " of a mile in "+        inchesOfRain + " inches of rain")	 }	
 		
 		else if (h > 1) {
-			say ("We have walked for more than " + h + " hours")
-			}
-		return h
+			say ("We have walked for more than " + h + " hours on the RiverParkway.")  		    }
 	}
     
+// Main Code	
 howLong(1 , 10 , 7);
+
+//Boolean Function///////////////Boolean Function////////////////////
+     
+	 //local varables 
+	   walked = false
+   stayedHome = true
+	  
+     var trueOrFalse = function (walked , stayedHome) 
+	 {
+	 if (walked === stayedHome)
+	 {say (" We can not walk on the Riverparkway and stay home at the same time.")
+	 }
+	 else
+	    
+	  { (walked === false && stayedHome === true)
+	  
+	  say ( " We decided to stay home today.")
+	
+	   }
+	   
+	   
+	 }
+	  
+	   
+	  
+	 trueOrFalse(false, true)
+	   
+	  
+	 
+		 
+
+
 
     
 		
@@ -61,11 +94,8 @@ howLong(1 , 10 , 7);
 		
 		
 		
-		var myFunction = myProcedure(apples , pears) 
-        {    
-       
-        }  
-        var answer = myProcedure (apples, pears)
+		
+      
         say ( answer + " is the amount of "+ apples + " apples" + " and " + pears + " pears.")
      
         if (apples === pears)
@@ -171,9 +201,11 @@ howLong(1 , 10 , 7);
         {
             say("our smart phones are working " +  ourSmartPhones  + " is Working ")
             //puting a string together for the array   
-        }
-        say (apples + " apples" + pears + " pears " + juiceBoxes + " juiceBoxes" + array + " array" + Rosella + " Rosella")
         
+        say (apples + " apples" + pears + " pears " + juiceBoxes + " juiceBoxes" + array + " array" + Rosella + " Rosella")
+	  
+		}
+	 
         
     
      
