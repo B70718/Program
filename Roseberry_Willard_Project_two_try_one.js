@@ -2,8 +2,45 @@
 //Sdi
 //5th Month May 12, 2013
   
-        // Bottles, Apples and aranges for logic
-        var say = function(message) console.log(message);
+        //Say function
+     var say = function(message)
+    { console.log(message);
+    }
+	
+	  //Procedure funtion
+	
+	var inchesOfRain = 2
+	var hours = 2
+	var milesPerhour = 2
+	
+	var howLong = function (h, milesPerhour, inchesOfRain) {
+		var long = (h) * (milesPerhour);
+		say ("We walked " + h + " hours" + " at " + milesPerhour +" miles per hour " + "which is a total of " + long + " miles " + "walked" + " in" + inchesOfRain + " inchesOfRain")
+		say ( h ) + "this is the number h";
+		
+		if (h ===  1) {
+	  say (" We have walked for one " + h + " hour so far " + " in " +  inchesOfRain + " Inches of rain ")
+	  }
+	     
+		 else if (h < 1){
+		say ("We have only walked for " + h + " of a mile in "+ inchesOfRain + " inches of rain")	 }	
+		
+		else if (h > 1) {
+			say ("We have walked for more than " + h + " hours")
+			}
+		return h
+	}
+    
+howLong(1 , 10 , 7);
+
+    
+		
+		
+		
+		
+		
+		
+		
         var tree = "Apple" +" Orange" + "Banna";
         var Rosella    = 5;
         var juiceBoxes = 5;
@@ -15,9 +52,18 @@
         ourSmartPhones [2] = "Samsung Galaxcy two";
         ourSmartPhones [3] = "Samsung Exsibit";
        
-        function myProcedure(apples , pears) 
+        var pi = 3.14159;
+		
+
+		
+		
+		
+		
+		
+		
+		var myFunction = myProcedure(apples , pears) 
         {    
-        return  apples + pears;
+       
         }  
         var answer = myProcedure (apples, pears)
         say ( answer + " is the amount of "+ apples + " apples" + " and " + pears + " pears.")
@@ -73,7 +119,7 @@
             var juiceBoxes = 3
         
             function oneNumber(juiceBoxes)
-        {
+        { 
             return juiceBoxes
             //Number funtion
         }
