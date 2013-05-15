@@ -7,10 +7,20 @@
     { console.log(message);
     }
 	
-  //Varible funtion
-	var inchesOfRain = 2
-	var hours = 2
-	var milesPerhour = 2
+     //Varible funtion
+	    var inchesOfRain = 2
+	    var hours = 2
+	    var milesPerhour = 2
+	    var tree = "Apple" +" Orange" + "Banna";
+        var Rosella    = 5;
+        var juiceBoxes = 5;
+        var          apples = 5;
+        var          pears = 5;
+        var ourSmartPhones = new Array();
+        ourSmartPhones [0] = "Note 2";
+        ourSmartPhones [1] = "Galaxcy one";
+        ourSmartPhones [2] = "Samsung Galaxcy two";
+        ourSmartPhones [3] = "Samsung Exsibit";
 		
   //Procedure funtion
     var howLong = function (h, milesPerhour, inchesOfRain) {
@@ -31,8 +41,7 @@
 			say ("We have walked for more than " + h + " hours on the      RiverParkway.")  		    }
 	}
     
-       // Main Code	
-       howLong(1 , 10 , 7);
+      
 
 //Boolean Function///////////////Boolean Function////////////////////
      
@@ -58,7 +67,7 @@
 	 
 	 
 	  
-	 trueOrFalse(true, false)
+	
 	 
 	 //////Number Funtion////////////////////////
 	 var x = 1
@@ -95,7 +104,6 @@
 	 
 	 }
 	 
-	 oneNumber(juiceBoxes);
 	 
 	 
 	// String Function////////////////////
@@ -111,8 +119,32 @@
             //50 juiceboxes down to zero
            
             say ("It is " + Rosella + " that " + " Rosella loves to drink " + juiceBoxes + " juiceBoxes.")
-           
-		
+			
+///////////	Array Funtion////////////////////////////////////
+        var number = 50;
+		ourSmartPhones
+		   
+		var myArray = function (juiceBoxes, ourSmartPhones)
++        {
++            say (juiceBoxes + " and " + ourSmartPhones + " are really nice! ")
++            //Inside the array funtion
++            
++                  
++         
++            var a = (2 * 5);
++            for (var i = 0;
++            i < ourSmartPhones;
++               i++)
++          
++            say (ourSmartPhones + "our Smart Phones. ")
++            say (i + " is the number " + a + " is 10 times the number ") 
++        
++            say("our smart phones are working " +  ourSmartPhones  + " is Working ")
++            //puting a string together for the array   
++        
++        say (apples + " apples" + pears + " pears " + juiceBoxes + " juiceBoxes" + array + " array" + Rosella + " Rosella")
+         
+-       }
 		
 		
 		
@@ -129,22 +161,20 @@
 
     
 		
+		// Main Code
+		// Main Code
+		// Procedure
+	   oneNumber(juiceBoxes);
+	   	
+       howLong(1 , 10 , 7);
+	   
+	    trueOrFalse(true, false)
 		
 		
 		
 		
 		
-		
-        var tree = "Apple" +" Orange" + "Banna";
-        var Rosella    = 5;
-        var juiceBoxes = 5;
-        var          apples = 5;
-        var          pears = 5;
-        var ourSmartPhones = new Array();
-        ourSmartPhones [0] = "Note 2";
-        ourSmartPhones [1] = "Galaxcy one";
-        ourSmartPhones [2] = "Samsung Galaxcy two";
-        ourSmartPhones [3] = "Samsung Exsibit";
+        
        
       
 		
