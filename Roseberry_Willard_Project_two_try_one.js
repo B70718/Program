@@ -109,30 +109,36 @@
         }
          
            /////////// myArray ////////////////////////////////////////////////////////////////////////////////
-              
-              i = 0;
+            var working;
+            i = 0;
             juiceBoxes = 5;
+            ourSmartPhones = working;
+            
+            var myArray = function(juiceBoxes , working)
+            {
         
         var ourSmartPhones = ["Note 2" , "Galaxcy one" , "Samsung Galaxcy two" , "Samsung Exhibit"];
     
-           var myArray = function ()
+        
             
-        {
-            say (juiceBoxes + " and " + ourSmartPhones[0] + " are really nice! ")
+        
+           console.log (juiceBoxes + " and " + ourSmartPhones[0] + " are really nice! ")
          
-         // loop for the Array
-          //    var a = (2 * 5);
-         //   for (var i = 0;
-          //  i < ourSmartPhones;
-           //    i++)
-          //
-            say (ourSmartPhones[1] + " our Smart Phones. ")
-            say (i + " is the number " + a + " is 10 times the number ") 
+        //  loop for the Array
+              var a = (2 * 5);
+              
+
+                
+              
+            
+          
+            console.log (ourSmartPhones[1] + " our Smart Phones. ");
+            say (i + " is the number " + a + " is 10 times the number "); 
+             console.log (ourSmartPhones[0]);
+             console.log ("our smart phones are working " +  (ourSmartPhones[0]) + " is Working ");
+            console.log(ourSmartPhones[0] + " hope this works");
         
-            say("our smart phones are working " +  ourSmartPhones [3]  + " is Working ")
-               
-        
-            say (apples + " apples" + pears + " pears " + juiceBoxes + " juiceBoxes" + myArray + " array" + Rosella + " Rosella" + "Stoped here ")
+            console.log (apples + " apples" + pears + " pears " + juiceBoxes + " juiceBoxes" + ourSmartPhones[1] + " array" + Rosella + " Rosella" + "Stoped here ");
          }
         
            // Main code  /////////////////// Main code  /////////////
@@ -145,7 +151,7 @@
        
        myString(Rosella, 4);
        
-       myArray(2,2);
+       myArray(5,1);
        
        
      
