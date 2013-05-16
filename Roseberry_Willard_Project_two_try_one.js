@@ -127,14 +127,16 @@
         //  loop for the Array
               var a = (2 * 5);
               
-
+             for (var i = 0, j = ourSmartPhones.length; (i < j); i++) {
+                
+             
                 
               
             
           
             console.log (ourSmartPhones[1] + " our Smart Phones. ");
             say (i + " is the number " + a + " is 10 times the number "); 
-             console.log (ourSmartPhones[0]);
+             } console.log (ourSmartPhones[0]);
              console.log ("our smart phones are working " +  (ourSmartPhones[0]) + " is Working ");
             console.log(ourSmartPhones[0] + " hope this works");
         
