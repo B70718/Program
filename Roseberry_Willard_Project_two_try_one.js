@@ -9,28 +9,10 @@
         var juiceBoxes = 5;
         var          apples = 5;
         var          pears = 5;
-        var ourSmartPhones = new Array();
-        ourSmartPhones [0] = "Note 2";
-        ourSmartPhones [1] = "Galaxcy one";
-        ourSmartPhones [2] = "Samsung Galaxcy two";
-        ourSmartPhones [3] = "Samsung Exsibit";
-       
-        var pi = 3.14159
 	
-		
-		
-		
-		
-		
-  
-   
-   
-                
                    var myProcedure = function (apples, pears)
                    
-        {    
-     
-          
+        {   
     
         say ( answer + " is the amount of "+ apples + " apples" + " and " + pears + " pears.")
      
@@ -56,16 +38,14 @@
         }
         
            //Boolan funtion   ///////////////////////////////////////////////////////////////////////
+    
            
-           function chase( apples , pears)
+           var chase = function (apples , pears)
         {
-            
-        
-            var answer = chase( apples , pears)
             
             if (apples === pears && Rosella)
         {              
-           apples = true
+            apples = true
             pears = true
             Rosella = true
             
@@ -84,24 +64,19 @@
         {   
             apples = false
             pears = false
-            Rosella = false
-            
-            
-       
-        }
-            var juiceBoxes = 3
-            
-            chase( 3, 3);
-            
-        }
+            Rosella = false  
+        }    
+        }   
         
         //////// funtion oneNUmber ////////////////////////////
         
-            function oneNumber(juiceBoxes)
+       
+            var juiceBoxes = 3
+          var oneNumber =  function (juiceBoxes)
         { 
             
             //Number funtion
-        
+            
             var x = 1;
             var answer = oneNumber
             say (" We have " + juiceBoxes + " juiceBoxes left");
@@ -121,45 +96,56 @@
         {   say ("We did not buy enough juiceBoxes")
                 //Checking to see if enough juiceBoxes
         }
-          oneNumber(5);
+          //50 juiceboxes down to zero
         }
              ///// function string //////////////////////////////////////////   
-        
-           function string(Rosella, juiceBoxes)  
+         
+           Rosella = Rosella;
+           var myString = function (Rosella, juiceBoxes)  
         {
-            say ( Rosella + "and " + juceBoxes + " have a lot in common")
-            
-        
-            say ( "It is "+ Rosella + " that Rosella has " + juiceBoxes + " juiceboxes in the house.")
-            return (Rosella , juiceBoxes)
-        }
-            //50 juiceboxes down to zero
+            say ( Rosella + "loves " + juiceBoxes + "juiceboxes at the same time.")
            
             say ("It is " + Rosella + " that " + " Rosella loves to drink " + juiceBoxes + " juiceBoxes.")
-            
+        }
          
            /////////// myArray ////////////////////////////////////////////////////////////////////////////////
-           
-            function myArray(juiceBoxes, ourSmartPhones)
+              
+              i = 0;
+            juiceBoxes = 5;
+        
+        var ourSmartPhones = ["Note 2" , "Galaxcy one" , "Samsung Galaxcy two" , "Samsung Exhibit"];
+    
+           var myArray = function ()
+            
         {
-            say (juiceBoxes + " and " + ourSmartPhones + " are really nice! ")
+            say (juiceBoxes + " and " + ourSmartPhones[0] + " are really nice! ")
          
          // loop for the Array
-            var a = (2 * 5);
-            for (var i = 0;
-            i < ourSmartPhones;
-               i++)
-          
-            say (ourSmartPhones + "our Smart Phones. ")
+          //    var a = (2 * 5);
+         //   for (var i = 0;
+          //  i < ourSmartPhones;
+           //    i++)
+          //
+            say (ourSmartPhones[1] + " our Smart Phones. ")
             say (i + " is the number " + a + " is 10 times the number ") 
         
-            say("our smart phones are working " +  ourSmartPhones  + " is Working ")
+            say("our smart phones are working " +  ourSmartPhones [3]  + " is Working ")
                
         
-        say (apples + " apples" + pears + " pears " + juiceBoxes + " juiceBoxes" + myArray + " array" + Rosella + " Rosella" + "Stoped here ")
-        }
+            say (apples + " apples" + pears + " pears " + juiceBoxes + " juiceBoxes" + myArray + " array" + Rosella + " Rosella" + "Stoped here ")
+         }
         
-    // Main code  /////////////////// Main code  /////////////
+           // Main code  /////////////////// Main code  /////////////
     
-      myArray(2 , 2);
+     
+      
+      chase( 3, 3);
+      
+       oneNumber(5);
+       
+       myString(Rosella, 4);
+       
+       myArray(2,2);
+       
+       
      
