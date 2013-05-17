@@ -1,84 +1,89 @@
 //Willard Roseberry
-//Sdi
+//Sdi 1605
 //5th Month May 12, 2013
   
         // Bottles, Apples and aranges for logic
-        var say = function(message) console.log(message);
+       
+        
         var tree = "Apple" +" Orange" + "Banna";
         var Rosella    = 5;
         var juiceBoxes = 5;
-        var          apples = 5;
-        var          pears = 5;
-	
-                   var myProcedure = function (apples, pears)
-                   
-        {   
-    
-        say ( answer + " is the amount of "+ apples + " apples" + " and " + pears + " pears.")
-     
-        if (apples === pears)
-        {   
-            say (apples + " apples is the same amount as " + pears + " pears.")
+        var     apples = true;
+        var      pears = true;
+        
+        var say = function(message){console.log(message);};
+        
+        ////////// myProcedure ////////////////////////////////////
+        
+        var myProcedure = function(apples, pears)           
+        {
             
-            //puting a string together for the procedure
+        if (apples === pears)
+        {
+        var answer = (apples + pears);
+        say ( answer + " is the amount of "+ apples + " apples" + " and " + pears + " pears.")
+      
+        say (apples + " apples is the same amount as " + pears + " pears.")
+            
+        //puting a string together for the procedure
         }
         else if (apples < pears)
         {
             
-            say (apples + "apples is less than pears" + pears)
-            //compareing apples to pears
+        say (apples + " apples is less than " + pears + " pears")
+        //compareing apples to pears
         }
-            else if (apples > pears)
+        else if (apples > pears)
         {
-            say (apples + "apples is greater than pears + pears")
-        }  
-            
-            //If apples greater than pears
-            myProcedure(2,5)
-        }
-        
-           //Boolan funtion   ///////////////////////////////////////////////////////////////////////
-    
-           
-           var chase = function (apples , pears)
+        say (apples + "apples is greater than pears + pears")
+                    
+        }         
+        } 
+     	/////	Boolean function	/////////////																			   					                     				
+         var chase = function (apples , pears)
         {
             
-            if (apples === pears && Rosella)
-        {              
+        if (apples === true && pears === true){
+            var fruit = apples + pears;
+                      
             apples = true
             pears = true
             Rosella = true
             
-            say ("It is " + apples + " that Rosella loves apples " + " and " + pears + " that she loves " + " pears.");
-            
-          
+            say ("It is equal to " + apples + " that Rosella loves apples " + " and " + pears + " that she loves " + " pears.");
+               
         } 
-            else if (apples <= pears && Rosella)
+            else if (apples === false && pears === true)
         {  
             apples = false
             pears = false
             Rosella = false
-            //Boolan funtion
+            say ("It is less than " + apples + " that Rosella loves apples " + " and " + pears + " that she loves " + " pears.");
+            say ("one of these is true and one is false" + apples + " is " + apples + " pears is " + pears + " ");
         }
-            else if (apples >= pears && Rosella)
+        
+            else if (apples === true && pears === false)
+
         {   
             apples = false
             pears = false
-            Rosella = false  
-        }    
+            Rosella = false
+            say ("It is greater than " + apples + " that Rosella loves apples " + " and " + pears + " that she loves " + " pears."
+                  );
+            say ("Apples is " + true + " and " + " pears is " + pears);
+           
+        }
+        return;
         }   
         
         //////// funtion oneNUmber ////////////////////////////
         
-       
-            var juiceBoxes = 3
-          var oneNumber =  function (juiceBoxes)
+          var juiceBoxes = 3
+          var oneNumber =  function(juiceBoxes)
         { 
             
-            //Number funtion
-            
             var x = 1;
-            var answer = oneNumber
+            var answer = oneNumber;
             say (" We have " + juiceBoxes + " juiceBoxes left");
           
             while (juiceBoxes >= 1)
@@ -87,73 +92,91 @@
             say (" We are down to " + juiceBoxes + " juiceBoxes");  
         }
             if (juiceBoxes === 0)
-        {   say ("Time to buy more juiceBoxes")
+        {   say ("Heading to the store now to buy 50 more juiceBoxes")
                
             juiceBoxes = 2 * 25;
             say ("We now have " + juiceBoxes + " In the house")   //code    
         }
             else if (juiceBoxes < 50)
-        {   say ("We did not buy enough juiceBoxes")
-                //Checking to see if enough juiceBoxes
+        {   say ("We did not buy enough juiceBoxes")     
         }
-          //50 juiceboxes down to zero
+          return juiceBoxes;
         }
-             ///// function string //////////////////////////////////////////   
-         
-           Rosella = Rosella;
-           var myString = function (Rosella, juiceBoxes)  
-        {
-            say ( Rosella + "loves " + juiceBoxes + "juiceboxes at the same time.")
+             ///// string function  //////////////////////////////////////////   
+        
+           var juiceBoxes = "juiceboxes";
+           var Rosella = "true";
+           var myString = function(Rosella, juiceBoxes)  
+         {
+            
+            say ( "Rosella " + "loves " + juiceBoxes + " juiceboxes at the same time.")
            
             say ("It is " + Rosella + " that " + " Rosella loves to drink " + juiceBoxes + " juiceBoxes.")
-        }
-         
+          return juiceBoxes, Rosella;
+          }
+          
            /////////// myArray ////////////////////////////////////////////////////////////////////////////////
             var working;
-            i = 0;
+            i = 1;
             juiceBoxes = 5;
-            ourSmartPhones = working;
+            b = 1;
+            var ourSmartPhones = "working";
             
             var myArray = function(juiceBoxes , working)
-            {
+        {
+            var ourSmartPhones = ["Note_2" , "Galaxcy one" , "Samsung Galaxcy two" , "Samsung Exhibit"];
         
-        var ourSmartPhones = ["Note 2" , "Galaxcy one" , "Samsung Galaxcy two" , "Samsung Exhibit"];
-    
-        
-            
-        
-           console.log (juiceBoxes + " and " + ourSmartPhones[0] + " are really nice! ")
+            console.log (juiceBoxes + " juice boxes with a " + ourSmartPhones[0] + " are really nice together. ")
          
-        //  loop for the Array
-              var a = (2 * 5);
+        //  loop for the Array //////////////////
+            var a = (b * a);
               
-             for (var i = 0, j = ourSmartPhones.length; (i < j); i++) {
-                
-             
-                
-              
-            
+             for (var i = 1, j = ourSmartPhones.length; (i < j); i++)
+          {
+               
+             a = i * 10;  
           
             console.log (ourSmartPhones[1] + " our Smart Phones. ");
-            say (i + " is the number " + a + " is 10 times the number "); 
-             } console.log (ourSmartPhones[0]);
-             console.log ("our smart phones are working " +  (ourSmartPhones[0]) + " is Working ");
+            say (i + " is the number " + a +" is 10 times the number "); 
+          } console.log (ourSmartPhones[0]);
+            console.log ("our smart phones are working " +  (ourSmartPhones[0]) + " is Working ");
             console.log(ourSmartPhones[0] + " hope this works");
-        
-            console.log (apples + " apples" + pears + " pears " + juiceBoxes + " juiceBoxes" + ourSmartPhones[1] + " array" + Rosella + " Rosella" + "Stoped here ");
-         }
+            
+            console.log("We have " + ourSmartPhones.length + " this many many smart phones.");
+            console.log("Ohh no. Rosella just droped a Smartphone and broke it!");
+            var Note_2 = ourSmartPhones.shift()
+            console.log("Now we are down to " + ourSmartPhones.length + " phones");
+            console.log(" Ohh no only");
+            console.log(ourSmartPhones.length) 
+            console.log("phones now!");
+            
+            ourSmartPhones.toString();
+            console.log ("Ohh no my smartphones changed into a string!");
+            console.log(ourSmartPhones);
+            return working;
+          }
         
            // Main code  /////////////////// Main code  /////////////
-    
-     
       
-      chase( 3, 3);
+      myProcedure(apples,pears)
       
-       oneNumber(5);
+      chase(7,7);
+      
+      oneNumber(5);
        
-       myString(Rosella, 4);
+      myString(Rosella, juiceBoxes);
        
-       myArray(5,1);
+      myArray(5,2);
+      
+     console.log("Theses are my return values from the funtions");
+       
+     //console.log("apples from the boolan funtion is " + fruit + " ");
+     console.log("My Array return values are "  + juiceBoxes + " juiceBoxes and " + ourSmartPhones + "is working ");
+     console.log("My string return values are " + Rosella + " Rosella " + " and " + juiceBoxes + " juiceboxes");
+     console.log("My number funtion return values are " + juiceBoxes + " juiceboxes")
+     console.log("My boolan funtion return valuse are " + apples + " apples " + pears + " pears");
+        
+       
        
        
      
