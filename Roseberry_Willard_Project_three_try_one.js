@@ -19,7 +19,7 @@
                       
             
       
- var familyName = function (username)
+         var familyName = function (username)
 {
  var procedure = username;
     ///////// Method: Procedure ////////////////////////////////
@@ -46,15 +46,110 @@ else if (procedure == "not defined")
     
       console.log(" Please try again the wrong user name has been used");
 }     
-}  
+}
+///////////// Conditional /////////////////////
+           
+     var rosellaOutside = function (permissionFromParents){
+	var time = 61;   // time and 30 minits
+	 var minits = permissionFromParents;
+	if (time < 15) {
+		console.log(" Rosella says thats not enough time!");
+		//code
+	}
+	if  (time === 30) {
+		console.log(" Rosella says. Thanks for the 30 minits but I want to stay out longer!");
+		//code
+	}
+	if (time >= 60) {
+		console.log(" Rosella stayed out for over an hour. She is very tired and falls asleep. It is time to put her to bed");
+		//code
+	}
+	
+     }
+	
+	////// Argument Boolean/////
+	
+	      var rosellaBoard = function (makeingMess , outSideWithOutPermision)
+	{
+	      var papersBooks	= makeingMess;   // Rosella gets board and finds papers or books to make a mess and 
+	      var unLockDoor = outSideWithOutPermision;
+	      if (papersBooks === true)
+	{
+		
+	    console.log(" It is " + papersBooks + " that Rosella is making a mess with papers and books because she is board");
+	    console.log(" It is " + unLockDoor + " that Rosella is staying inside to play");
+	}
+	else
+	{
+	    console.log(" It is " + papersBooks + " that Rosella is makeing a mess" + " She is inside being good");
+	    console.log(" It is " + unLockDoor + " that Rosella is inside." + " She is outside runing around");
+	    return (makeingMess , outSideWithOutPermision);
+	}
+	}
+	
+	////////////// while loop //////////////////
+	var a = 1;
+	while (a < 5)
+	{
+	 console.log( " Rosella makes " + a + " messes when she is board.");
+	 a ++;
+	}
+
+
+
+///////////// Property Boolean /////////////////////////////k
+           //  var gotInTrouble =  rosellaBoard( true , true );
+	   
+	   rosellaBoard("true", "true");
+	   var makeingMess = true;
+	   var outSideWithOutPermision = true;
+	   unLockDoor = true;
+            if (makeingMess && outSideWithOutPermision)
+        {                            
+            console.log(" Rosella wants to go and play and it is " + makeingMess + " that she is making a mess");
+            console.log(" Rosella wants to go outside and it is " + outSideWithOutPermision + " that she left with out permission");
+
+           // If the value parameter is omitted or is 0, -0, null, false, Nan,undefined, or the empty string (""), the object has an initial value of false.
+        }
+           else (makeingMess != unLockDoor)
+	{
+	     console.log(" It is " + makeingMess + " that Rosella is makeing a mess or it is " + unLockDoor);
+        }
+//var a=new Boolean(1);    
+//a.myColor();
+//var b=a.color;
+
+    console.log(" Property boolean");
+
+
+
+
+
+
+
+
    //// Main code/////////    
-      familyName(daddy);
+      familyName(daddy);   // make an array or object put in a for loop and call all four family members.
        
       familyName( mommy);
       
       familyName( sarah );
       
       familyName( rosella );
+      
+      rosellaOutside( 15 );
+      
+      rosellaBoard( true , true);
+      
+       console.log ("The length of the rosellaBoard propertiey is " + rosellaBoard.length)
+       
+    
+      
+    
+      
+     
+      
+      
        
      
       
