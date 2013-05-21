@@ -169,8 +169,91 @@ else if (procedure == mommy)
        
        console.log("Rosella stayed outside for " + myTimeValue + " minits. Now she is very tired");
        
-       
+      /////////////////// Object Argument ////////////////////////////////// 
     
+    
+
+ var travel = "Going to the moon or anywhere else we w";
+
+ //////////  Local Variables /////////////////////////
+ 
+     var car = {
+       id: "gadges" [
+            "fuel",
+            "transmission",
+            "fusion reactor",
+            "shield generator"
+        ],
+        makeModle: "Dalorian",
+        color: "Blue",
+        speicalSystems: [
+            "Force shield",
+            "Fusion Reactors",
+            "Cloaking Device",
+            "Interplanentary Navigational System",
+            "Auto Pilot Emergency Evasion System" 
+        ],
+        
+        sayHi: function () {
+            console.log("Hi");
+           
+        
+    }  
+ };
+ 
+ // Constructor , Module Pattern
+
+
+
+var familyCar = function (name) {
+   // private
+    var luggage = [];
+    var family = [];
+    var luggageOnFamilyCar = function (item) {
+        if (item !== "hair dryer") {
+        luggage.push(item);
+        } else {
+            console.log("Not allowed to have a hair dryer because it uses to much energy");
+        }
+    };
+    var luggageOnFamilyCarList = function () {
+      for (var n = 0; n < luggage.length; n++) {
+        console.log(name + " cargo " + n + " :" +  luggage[n] + ".");
+      }
+    
+    };
+    
+   var getName = function () { return name; }; 
+    return {  // public
+    "luggage": luggage,
+     "familyCar": faimilyCar,
+    "luggageOnFamilyCar": luggageOnFamilyCar, 
+    };
+};
+ 
+ 
+ 
+car.sayHi();
+ 
+ 
+      var prepareingForTrip = 20;
+      
+      var carOnGround = 10;
+      
+      var a = carOnGround;
+      
+      
+      while (a > prepareingForTrip)
+      {
+        carOnGround = carOnGround + " The car is on the ground in loop " + carOnGround + " carOnGround ";
+       console.log ( a ) + " This is a's value in the loop";
+       a++;
+      
+     console.log (" The car is on the groud now " + a + " This is a's value change  ")              
+      }
+      
+      console.log ( a ) + " caronground number output";
+      console.log ( prepareingForTrip ) + " prepareingfortrip output"
       
     
       
