@@ -1,50 +1,49 @@
 //Willard Roseberry
 //Sdi 1605
 //5th Month May 18, 2013
-//Project 3
-  
-        
-        
-        //Willard Roseberry
+//Project 3   
+ 
+ 
+ //Willard Roseberry
 //Sdi 1605
 //5th Month May 18, 2013
 //Project 3
   
         
          // Global varables
-         var sarah = "sarah";
-         var rosella = "rosella";
-         var mommy  =   " mommy";
-         var daddy   = "daddy";
+var sarah = "sarah";
+var rosella = "rosella";
+var mommy  =   " mommy";
+var daddy   = "daddy";
                       
             
       
-         var familyName = function (username)
+var familyName = function (username)
 {
- var procedure = username;
+    var procedure = username;
     ///////// Method: Procedure ////////////////////////////////
           
        
-if (procedure === "sarah")
+    if (procedure === "sarah")
 {
-	console.log ("Welcome Sarah");
+	    console.log("Welcome Sarah");
 }
-else if (procedure == "rosella")
+else if (procedure === "rosella")
 {
-      console.log ("Welcome Rosella");
+        console.log("Welcome Rosella");
 }
-else if (procedure == daddy)
+else if (procedure === daddy)
 {
-      console.log ("Welcome Daddy");
+        console.log("Welcome Daddy");
 }
-else if (procedure == mommy)
+else if (procedure === mommy)
 {
        console.log ("Welcome Mommy");
 }     
 }
 ///////////// Number Argument /////////////////////
            
-     var rosellaOutside = function (permissionFromParents){
+var rosellaOutside = function (permissionFromParents) {
 	var time = 61;   // time and 30 minits
 	 var minits = permissionFromParents;
 	if (time < 15) {
@@ -53,7 +52,7 @@ else if (procedure == mommy)
 	}
 	if  (time === 30) {
 		console.log(" Rosella says. Thanks for the 30 minits but I want to stay out longer!");
-		//code
+		
 	}
 	if (time >= 60) {
 		console.log(" Rosella stayed out for over an hour. She is very tired and falls asleep. It is time to put her to bed");
@@ -63,24 +62,23 @@ else if (procedure == mommy)
 	return time;
      }
      
-     console.log ("Please tell me the" + myTimeValue + " Thanks");
 	
 	////// Argument Boolean/////
 	
-	      var rosellaBoard = function (makeingMess , outSideWithOutPermision)
+var rosellaBoard = function (makeingMess, outSideWithOutPermision)
 	{
-	      var papersBooks	= makeingMess;   // Rosella gets board and finds papers or books to make a mess and 
-	      var unLockDoor = outSideWithOutPermision;
-	      if (papersBooks === true)
+	        var papersBooks	= makeingMess;   // Rosella gets board and finds papers or books to make a mess and 
+	        var unLockDoor = outSideWithOutPermision;
+	        if (papersBooks === true)
 	{
 		
-	    console.log(" It is " + papersBooks + " that Rosella is making a mess with papers and books because she is board");
-	    console.log(" It is " + unLockDoor + " that Rosella is staying inside to play");
+	            console.log(" It is " + papersBooks + " that Rosella is making a mess with papers and books because she is board");
+	            console.log(" It is " + unLockDoor + " that Rosella is staying inside to play");
 	}
 	else
 	{
-	    console.log(" It is " + papersBooks + " that Rosella is makeing a mess" + " She is inside being good");
-	    console.log(" It is " + unLockDoor + " that Rosella is inside." + " She is outside runing around");
+	            console.log(" It is " + papersBooks + " that Rosella is makeing a mess" + " She is inside being good");
+	            console.log(" It is " + unLockDoor + " that Rosella is inside." + " She is outside runing around");
 	   
 	}
 	}
@@ -95,9 +93,7 @@ else if (procedure == mommy)
 
 
 
-        /////////// Property Boolean /////////////////////////////k
-        
-	   
+        /////////// Property Boolean /////////////////////////////   
 	 
 	   var makeingMess = true;
 	   var outSideWithOutPermision = true;
@@ -109,9 +105,9 @@ else if (procedure == mommy)
             if (putThingsOnFloor && extraFreedom)
         {
 	    
-            console.log(" Rosella wants to go and play and it is " + putThingsOnFloor  + " that she is making a mess");
-            console.log(" Rosella wants to go outside and it is " + extraFreedom + " that she left with out permission");
-
+             console.log(" Rosella wants to go and play and it is " + putThingsOnFloor  + " that she is making a mess");
+             console.log(" Rosella wants to go outside and it is " + extraFreedom + " that she left with out permission");
+  
            // If the value parameter is omitted or is 0, -0, null, false, Nan,undefined, or the empty string (""), the object has an initial value of false.
         }
            else (putThingsOnFloor != unLockDoor)
@@ -167,40 +163,11 @@ else if (procedure == mommy)
        
        var myTimeValue = rosellaOutside(61);
        
+       var time = rosellaOutside("saw the moon");
+       
        console.log("Rosella stayed outside for " + myTimeValue + " minits. Now she is very tired");
        
-      /////////////////// Object Argument ////////////////////////////////// 
-    
-    
-
- var travel = "Going to the moon or anywhere else we w";
-
- //////////  Local Variables /////////////////////////
- 
-     var car = {
-       id: "gadges" [
-            "fuel",
-            "transmission",
-            "fusion reactor",
-            "shield generator"
-        ],
-        makeModle: "Dalorian",
-        color: "Blue",
-        speicalSystems: [
-            "Force shield",
-            "Fusion Reactors",
-            "Cloaking Device",
-            "Interplanentary Navigational System",
-            "Auto Pilot Emergency Evasion System" 
-        ],
-        
-        sayHi: function () {
-            console.log("Hi");
-           
-        
-    }  
- };
- 
+      
  // Constructor , Module Pattern
 
 
@@ -230,10 +197,53 @@ var familyCar = function (name) {
     "luggageOnFamilyCar": luggageOnFamilyCar, 
     };
 };
+
+/////////////////////// Augument String //////////////////////////////////
+
+     var goForRide = function (park , moon){
+      var ride = park;
+      console.log(park + " went to the park " + moon + " and had a great time!");
+      return ride;
+     };
+     
+     
+     
+ /////////////////// Object Argument ////////////////////////////////// 
+    
+    
+
+
+
+ //////////  Local Variables /////////////////////////
+ 
+     var car = {
+       id: "gadges" [
+            "fuel",
+            "transmission",
+            "fusion reactor",
+            "shield generator"
+        ],
+        makeModle: "Dalorian",
+        color: "Blue",
+        speicalSystems: [
+            "Force shield",
+            "Fusion Reactors",
+            "Cloaking Device",
+            "Interplanentary Navigational System",
+            "Auto Pilot Emergency Evasion System" 
+        ],
+        
+       sayHi: function () {
+            console.log("Hi"); 
+           
+        
+    }  
+ };
  
  
  
-car.sayHi();
+ 
+       car.sayHi();
  
  
       var prepareingForTrip = 20;
@@ -254,6 +264,10 @@ car.sayHi();
       
       console.log ( a ) + " caronground number output";
       console.log ( prepareingForTrip ) + " prepareingfortrip output"
+      
+       console.log ("Please tell me the" + myTimeValue + " Thanks");
+       
+      goForRide("Rosella", "looked at the moon");
       
     
       
