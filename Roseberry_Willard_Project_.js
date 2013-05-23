@@ -26,26 +26,29 @@ var familyName = function (username)
        
     if (procedure === "sarah")
 {
-	    console.log("Welcome Sarah");
-}
+        console.log("Welcome Sarah");
+    }
 else if (procedure === "rosella")
 {
         console.log("Welcome Rosella");
-}
+    }
 else if (procedure === daddy)
 {
         console.log("Welcome Daddy");
-}
+    }
 else if (procedure === mommy)
 {
-       console.log ("Welcome Mommy");
-}     
+        console.log("Welcome Mommy");
+    	//code
+}
+else if (procedure !== " ") 
+    console.log("Sorry the wrong user name has been used. The car will not start.");
 }
 ///////////// Number Argument /////////////////////
            
 var rosellaOutside = function (permissionFromParents) {
 	var time = 61;   // time and 30 minits
-	 var minits = permissionFromParents;
+
 	if (time < 15) {
 		console.log(" Rosella says thats not enough time!");
 		//code
@@ -60,48 +63,48 @@ var rosellaOutside = function (permissionFromParents) {
 		
 	}
 	return time;
-     }
+}
      
 	
 	////// Argument Boolean/////
 	
 var rosellaBoard = function (makeingMess, outSideWithOutPermision)
 	{
-	        var papersBooks	= makeingMess;   // Rosella gets board and finds papers or books to make a mess and 
 	        var unLockDoor = outSideWithOutPermision;
+	        var papersBooks	= makeingMess;   // Rosella gets board and finds papers or books to make a mess and 
 	        if (papersBooks === true)
 	{
 		
 	            console.log(" It is " + papersBooks + " that Rosella is making a mess with papers and books because she is board");
 	            console.log(" It is " + unLockDoor + " that Rosella is staying inside to play");
-	}
+	        }
 	else
 	{
 	            console.log(" It is " + papersBooks + " that Rosella is makeing a mess" + " She is inside being good");
 	            console.log(" It is " + unLockDoor + " that Rosella is inside." + " She is outside runing around");
 	   
-	}
-	}
+	        }
+	    }
 	
 	////////////// while loop //////////////////
-	var a = 1;
-	while (a < 5)
+var a = 1;
+while (a < 5)
 	{
 	 console.log( " Rosella makes " + a + " messes when she is board.");
-	 a ++;
-	}
+	a ++;
+}
 
 
 
         /////////// Property Boolean /////////////////////////////   
 	 
-	   var makeingMess = true;
-	   var outSideWithOutPermision = true;
+var makeingMess = true;
+var outSideWithOutPermision = true;
 	  
-	   var putThingsOnFloor = makeingMess;
-	   var extraFreedom = outSideWithOutPermision;
+var putThingsOnFloor = makeingMess;
+var extraFreedom = outSideWithOutPermision;
 	   
-	   unLockDoor = true;
+var unLockDoor = true;
             if (putThingsOnFloor && extraFreedom)
         {
 	    
@@ -114,7 +117,7 @@ var rosellaBoard = function (makeingMess, outSideWithOutPermision)
 	{
 	     console.log(" It is " + putThingsOnFloor+ " that Rosella is makeing a mess or it is " + unLockDoor + " that Rosella unlocked the door");
         }
-//////////////////////////  Augument Number        //////////////////////////////////////////////////
+//////////////////////////  Augument Number  goingForRide      //////////////////////////////////////////////////
           var car = true;  
           var juiceBoxes = 3
           var goingForRide =  function(juiceBoxes, car)
@@ -140,11 +143,138 @@ var rosellaBoard = function (makeingMess, outSideWithOutPermision)
         }
           return juiceBoxes, car;
 	}
+///////////////////////////////////  while loop    ///////////////////////////////////////////
+var prepareingForTrip = 20;
+      
+      var carOnGround = 10;
+      
+      var a = carOnGround;
+      
+      
+      while (a > prepareingForTrip)
+      {
+        carOnGround = carOnGround + " The car is on the ground in loop " + carOnGround + " carOnGround ";
+       console.log ( a ) + " This is a's value in the loop";
+       a++;
+      
+     console.log (" The car is on the groud now " + a + " This is a's value change  ")              
+      }
+
+
+   
+ ///////////////////////////////// Argument Array //////////////////////////////
 
 
 
+var familyCar = function (name) {
+   // private
+    var luggage = [];
+    var family = [];
+    var luggageOnFamilyCar = function (item) {
+        if (item !== "hair dryer") {
+        luggage.push(item);          /// Method
+        } else {
+            console.log("Not allowed to have a hair dryer because it uses to much energy");
+        }
+    };
+    var luggageOnFamilyCarList = function () {
+      for (var n = 0; n < luggage.length; n++) {
+        console.log(name + " cargo " + n + " :" +  luggage[n] + ".");
+      }
+    
+    };
+    //////////////////////////////////// getName //////////////
+   var getName = function () { return name; }; 
+    return {  // public
+    "luggage": luggage,
+     "familyCar": faimilyCar,
+    "luggageOnFamilyCar": luggageOnFamilyCar, 
+    };
+};
 
-   //// Main code/////////    
+/////////////////////// Augument String //////////////////////////////////
+
+     var goForRide = function (park , moon){
+      var ride = park;
+      console.log(park + " went to the park " + moon + " and had a great time!");
+      
+      var cartrip; //////////////////////////////////////////////nested for loop ///////////
+  cartrip = "It is time to start the countdown for the car to take off";
+  for (i = 1; i <= 3; i++) {
+	cartrip = cartrip + "Get ready the car is takeing off soon";
+	for (j = 1; j <= 3; j++) {
+		cartrip = cartrip + "Look out here we go!";
+	}
+	cartrip = cartrip + "We made it";
+	}
+       cartrip = cartrip + "That was fun!";
+       console.log (cartrip + " ");
+  
+      return ride;
+     };
+ 
+ /////////////////////// Arugument Array ///////////////////////////////////////
+
+ var trip = function() {  
+ var goingOnRide = Array.prototype.slice.call(arguments); // makes a variable called goingOnRide
+  goingOnRide.unshift('trip');
+  goingOnRide.push('I found it');
+  console.log( goingOnRide.join(' '));
+ } 
+  
+  
+  /////////////////////////////////////////////Arugument Array/////////////////
+ 
+ 
+  var rideInCar = [true, false];
+  
+  rideInCar[1];
+  console.log(" It is " + rideInCar[0] + " that we are going for a ride in the car");
+  
+  /////////////////// Object Argument ////////////////////////////////// 
+    
+ 
+     var car = {
+       active: "gadges" [ 
+            "fuel",
+            "transmission",
+            "fusion reator",
+            "shield generator"
+        ],
+        makeModle: "Dalorian",
+        color: "Blue",
+        speicalSystems: [
+            "Force shield",
+            "Fusion Reactors",
+            "Cloaking Device",
+            "Interplanentary Navigational System",
+            "Auto Pilot Emergency Evasion System" 
+        ],
+     };
+  
+ 
+ 
+  
+  ////////////////////main   ///////////////////////
+ 
+  
+ 
+ console.log(car.active);
+ 
+ console.log("I checked the " + car.active + " before the " + car.makeModle + " was turned on");
+ 
+      console.log ( a ) + " caronground number output";
+      console.log ( prepareingForTrip ) + " prepareingfortrip output"
+      
+       console.log ("Please tell me the" + myTimeValue + " Thanks");
+       
+      goForRide("Rosella", "looked at the moon");
+      
+      trip('going', 'for', 'ride','in','the','car');
+      
+      console.log(" It is " + rideInCar[1] + " that we are going for a ride in the car");
+      
+    //// Main code/////////    
       familyName(daddy);   // make an array or object put in a for loop and call all four family members.
        
       familyName( mommy);
@@ -168,118 +298,6 @@ var rosellaBoard = function (makeingMess, outSideWithOutPermision)
        console.log("Rosella stayed outside for " + myTimeValue + " minits. Now she is very tired");
        
       
- // Constructor , Module Pattern
-
-
-
-var familyCar = function (name) {
-   // private
-    var luggage = [];
-    var family = [];
-    var luggageOnFamilyCar = function (item) {
-        if (item !== "hair dryer") {
-        luggage.push(item);
-        } else {
-            console.log("Not allowed to have a hair dryer because it uses to much energy");
-        }
-    };
-    var luggageOnFamilyCarList = function () {
-      for (var n = 0; n < luggage.length; n++) {
-        console.log(name + " cargo " + n + " :" +  luggage[n] + ".");
-      }
-    
-    };
-    
-   var getName = function () { return name; }; 
-    return {  // public
-    "luggage": luggage,
-     "familyCar": faimilyCar,
-    "luggageOnFamilyCar": luggageOnFamilyCar, 
-    };
-};
-
-/////////////////////// Augument String //////////////////////////////////
-
-     var goForRide = function (park , moon){
-      var ride = park;
-      console.log(park + " went to the park " + moon + " and had a great time!");
-      return ride;
-     };
-     
-     
-     
- /////////////////// Object Argument ////////////////////////////////// 
-    
- 
-     var car = {
-       active: [
-		"gadges", 
-            "fuel",
-            "transmission",
-            "fusion reactor",
-            "shield generator"
-        ],
-        makeModle: "Dalorian",
-        color: "Blue",
-        speicalSystems: [
-            "Force shield",
-            "Fusion Reactors",
-            "Cloaking Device",
-            "Interplanentary Navigational System",
-            "Auto Pilot Emergency Evasion System" 
-        ],
-        
-       sayHi: function () {
-            console.log("Hi"); 
-           
-        
-    }  
- };
- /////////////////////// Arugument Array ///////////////////////////////////////
-  var rideInCar;
-  var park = function (rideInCar){
-  var rideInCar = [true]
-  console.log(" It is " + rideInCar + " that we are going for a ride in the car");
-  }
-  
-  
-  //////////////////////////////////////////////main ///////////
- 
-  
-  console.log("It is " + rideInCar[0]+ " that we are going for a ride in the car");
- 
- console.log( car.active );
- 
- console.log("I checked the " + car.active + " before the " + car.makeModle + " was turned on");
- 
-
-       car.sayHi();
- 
- 
-      var prepareingForTrip = 20;
-      
-      var carOnGround = 10;
-      
-      var a = carOnGround;
-      
-      
-      while (a > prepareingForTrip)
-      {
-        carOnGround = carOnGround + " The car is on the ground in loop " + carOnGround + " carOnGround ";
-       console.log ( a ) + " This is a's value in the loop";
-       a++;
-      
-     console.log (" The car is on the groud now " + a + " This is a's value change  ")              
-      }
-      
-      console.log ( a ) + " caronground number output";
-      console.log ( prepareingForTrip ) + " prepareingfortrip output"
-      
-       console.log ("Please tell me the" + myTimeValue + " Thanks");
-       
-      goForRide("Rosella", "looked at the moon");
-      
-    
       
      
       
