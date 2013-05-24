@@ -271,19 +271,19 @@ var familyCar = function (name) {
         ],
      };
   //////////////// JASON handleData
-/*  
+  
   var car;
   var handleData = function (json){
                                                  // console.log(json);
     for (var i = 0; i < json.car.length; i++) {
         var car = json.car[i];
-        console.log("User ID: " + car.uuid + ", Name: " + car.name + ", Age: " +
+        console.log("User ID: " + car.id + ", Name: " + car.name + ", Age: " +
                     car.age);
     };
     
 };
 
-*/
+
  
  
   
@@ -291,7 +291,7 @@ var familyCar = function (name) {
 
  
 
- 
+      console.log (car.id); 
       console.log ("Then she made " + ( a ) + " more messes");
       console.log (" She really go carryed away and made " +( prepareingForTrip ) + " more");
       
