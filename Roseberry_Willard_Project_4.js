@@ -1,10 +1,10 @@
 // Project 4
 // Willard Roseberry
 // Libarys
+   
+// Checks for a valid phone number 123-456-7890
 
-
-
-        var myphoneString = function (phoneString){
+        var myPhoneString = function (phoneString){
 	
         var splitFrontPhoneString;
         var splitEndPhoneString;
@@ -16,28 +16,72 @@
         if (splitFrontPhoneString === "-" && splitEndPhoneString === 7 && lengthPhoneString === 12 ) {
          
         var bool = new Boolean(1);
-        var myphoneString = bool.toString();
+        var myPhoneString = bool.toString();
        
       }
     
-      else
+       else
     
-       var bool = new Boolean(0);
-       var myPhoneString = bool.toString();
-       console.log(myPhoneString);
+        var booll = new Boolean(0);
+        var myPhoneString = bool.toString();
+        console.log(myPhoneString);
      
-  
-    
       }
-	 
-  
+        
+        // Checks for a valid Email String funtion
+         
+        var myEmailString = function (emailString){
+            
+            var splitFrontEmailString;
+            var splitEndEmailString;
+            splitFrontEmailString = emailString.indexOf("@");
+            splitEndEmailString = emailString.lastIndexOf("mail.com");
+    
+        if (splitFrontEmailString  >= 1 && splitEndEmailString >= 1) {
+            
+            var bool = new Boolean(1);
+        var emailString = bool.toString();
+          
+        }
+        
+         else
+         
+        var bool = new Boolean(0);
+        var emailString = bool.toString();
+        console.log(emailString);
+       
+       }
+       
+       // Is the string a URL (Does it start with http:// or https://)?
+       
+       
+        var myUrl = function (UrlString){
+            
+            var urlFrontString;
+            var urlSubString;
+           
+            urlFrontString = UrlString.charAt(4);
+            urlSubString = UrlString.substing(0,4);
+            
+            If (urlFrontString === "s")
+            
+            var bool = new Boolean(1);
+        var myPhoneString = bool.toString();
+        console.log(urlSubString)      
+        }
+        
+        UrlString("https://")
+      
+    
+     
+   //main code	 
+   var workingPhoneString = myPhoneString("480-392-3346");
 
-       var workingPhoneString = myphoneString("480-392-3434");
-	 
-	
-  
-    
-    
+  // Email test   
+   myWorkingEmailString = myEmailString;
+        
+   myWorkingEmailString("wgrroseberry@gmail.com");
+         
     
     
     
