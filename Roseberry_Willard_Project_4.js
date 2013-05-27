@@ -50,39 +50,53 @@
         var emailString = bool.toString();
         console.log(emailString);
        
-       }
+        }
        
        // Is the string a URL (Does it start with http:// or https://)?
        
        
         var myUrl = function (UrlString){
-            
             var urlFrontString;
-            var urlSubString;
-           
-            urlFrontString = UrlString.charAt(4);
-            urlSubString = UrlString.substing(0,4);
-            
-            If (urlFrontString === "s")
-            
+            var urlFrontStringTwo;
+          
+            urlFrontString = UrlString.lastIndexOf("http://");
+            urlFrontStringTwo = UrlString.lastIndexOf("https://");
+     
+            if (urlFrontString === 0 || urlFrontStringTwo === 0){
+        
             var bool = new Boolean(1);
-        var myPhoneString = bool.toString();
-        console.log(urlSubString)      
+            var UrlString = bool.toString();
+            console.log(UrlString);
+        }
+            
+        else
+        {    
+            var bool = new Boolean(0);
+            var UrlString = bool.toString();
+            console.log(UrlString);
         }
         
-        UrlString("https://")
+        }
+        
+        var myhtmlString = myUrl("https://")
+        
+        
+        
+      
       
     
      
-   //main code	 
-   var workingPhoneString = myPhoneString("480-392-3346");
-
-  // Email test   
-   myWorkingEmailString = myEmailString;
-        
-   myWorkingEmailString("wgrroseberry@gmail.com");
+         //main code
          
-    
+         var workingPhoneString = myPhoneString("480-392-3346");
+
+        // Email test   
+        myWorkingEmailString = myEmailString;
+        myWorkingEmailString("wgrroseberry@gmail.com");
+         
+       //  myWorking http:// and https://
+  
+         var myhtmlString = myUrl("https://")
     
     
 
