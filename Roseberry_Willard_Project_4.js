@@ -1,6 +1,12 @@
-// Project 4
-// Willard Roseberry
-// Libarys
+
+
+/* Willard Roseberry
+ * SDI 1304
+ * Project 4
+ * Library of Functions
+ */
+ 
+ var myLibrary = function(){
  
  // Begining of Problem number 1 //  
 // Checks for a valid phone number 123-456-7890
@@ -25,14 +31,14 @@
     
         var booll = new Boolean(0);
         var myPhoneString = bool.toString();
-        console.log(myPhoneString);
+        return myPhoneString;
      
        }     //End of Problem number 1./////////////////////////////
        // Beginning of Problem number 2.
         
         // Checks for a valid Email String funtion
          
-        var myEmailString = function (emailString){
+        var myWorkingEmailString  = function (emailString){
             
             var splitFrontEmailString;
             var splitEndEmailString;
@@ -50,7 +56,7 @@
          
         var bool = new Boolean(0);
         var emailString = bool.toString();
-        console.log(emailString);
+        return emailString;
        
         }
        // End of Problem number 2
@@ -68,33 +74,32 @@
         
             var bool = new Boolean(1);
             var UrlString = bool.toString();
-            console.log(UrlString);
+            return UrlString;
         }
             
         else
         {    
             var bool = new Boolean(0);
             var UrlString = bool.toString();
-            console.log(UrlString);
+           
         }
         
         }
         
         // End of Problem number 3
-		// Start of Problem number 4
-		
+	// Start of Problem number 4	
        // First letter on each words gets a capital letter. 
-	   // Seting local variables               
+      // Seting local variables               
              var myCap = function (capForMe){
-             var name = "willard roseberry is going to the park";
-             var capForMe = " ";
-             var wordArray = name.split(",");
-
-		      for(var i=0;i<wordArray.length;i++)
-        {
-			   capForMe += wordArray[i].replace("willard roseberry is going to the park","Willard Roseberry Is Going To The Park")  
-        }
-               console.log(capForMe);
+             var capForMe = [];
+             var wordArray = name.split(" ");
+		      for(var i = 0; i < wordArray.length; i++){
+			   var capLetter = wordArray[i].charAt(0).toUpperCase();
+                           capForMe.push(capLetter + wordArray[i].slice(1));
+        };                                          
+          newString = capForMe.join(" ");
+          console.log(newString);
+          return newString;
                 
         }
         // End of Problem number 4
@@ -105,7 +110,7 @@
             console.log(firstString);
        
             var n = firstString.replace(/,/g,"/");
-            console.log(n);
+            console.log(n);    // can not use .replace
                 
                                      
             return firstString;
@@ -113,7 +118,9 @@
             
             myStringSeperater();
             
-            
+        // Start of Problem number 6
+        
+           
             
             
             
@@ -147,27 +154,36 @@
          
 
 
-       
+    return {
+        "myCap": myCap,
+        "myPhoneString": myPhoneString,
+        "myWorkingEmailString": myWorkingEmailString,
+        "myUrl": myUrl
+    }   
+ } // end myLibrary
         
-        
-        
-        
-         //main code
-         
-         var workingPhoneString = myPhoneString("480-392-3346");
+//main code
+var newLib = new myLibrary();
+
+console.log("is this a capital letter " + newLib.myCap("hope this workI s"));
+
+console.log("This is the phonenumber " + newLib.myPhoneString("480-392-3346"));
 
         // Email test   
-        myWorkingEmailString = myEmailString;
-        myWorkingEmailString("wgrroseberry@gmail.com");
+console.log("Email test " + newLib.myWorkingEmailString("wgrroseberry@gmail.com"));
+       
          
        //  myWorking http:// and https://
   
-         var myhtmlString = myUrl("https://")
+ console.log("My url "+ newLib.myUrl("https://"));
+ 
+  console.log(UrlString);
 		 
-	   // Caps the first letter of the words.
-		    myCap();
-         
-        
+	   // Caps the first letter of all the words.
+		    
+console.log("hello is this working " + newLib.myCap("hello there"));
+      
+      
     
     
     
