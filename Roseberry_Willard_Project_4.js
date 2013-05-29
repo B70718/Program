@@ -24,14 +24,13 @@
          
         var bool = new Boolean(1);
         var myPhoneString = bool.toString();
-       
+        return true;
       }
     
        else
     
         var booll = new Boolean(0);
-        var myPhoneString = bool.toString();
-        return myPhoneString;
+        return false;
      
        }     //End of Problem number 1./////////////////////////////
        // Beginning of Problem number 2.
@@ -91,37 +90,69 @@
        // First letter on each words gets a capital letter. 
       // Seting local variables               
              var myCap = function (capForMe){
+             var wordArray = capForMe.split(" ");
              var capForMe = [];
-             var wordArray = name.split(" ");
-		      for(var i = 0; i < wordArray.length; i++){
+	     for(var i = 0; i < wordArray.length; i++){
 			   var capLetter = wordArray[i].charAt(0).toUpperCase();
                            capForMe.push(capLetter + wordArray[i].slice(1));
         };                                          
-          newString = capForMe.join(" ");
-          console.log(newString);
-          return newString;
+          newOneString = capForMe.join(" ");
+          
+          return newOneString;
                 
         }
         // End of Problem number 4
         // Start of Problem number 5
         
-            var myStringSeperater = function (ListOfString, seperator, inPlaceOf){
-            var firstString = "I, went , to , the, park, and , played, a , game.";
-            console.log(firstString);
-       
-            var n = firstString.replace(/,/g,"/");
-            console.log(n);    // can not use .replace
-                
-                                     
-            return firstString;
+            var myStringSeperater = function (listOfString, seperator, inPlaceOf){
+                 var answer = [];
+                 var mywords = listOfString.split(" ");
+              for (var i = 0; i < mywords.length; i++) {
+                var letter = mywords[i]
+              //  seperator.push("/");
+                answer.push(seperator + mywords[i].slice(1));
+            };
+                newString = answer.join(" ");      
+          //  var n = firstString.length   
+            return newString;
             }
             
-            myStringSeperater();
-            
-        // Start of Problem number 6
-        
            
             
+        // Start of Problem number 6
+        // Find the differents between two dates
+        
+    var dateFunction = function (one,two) {
+		var results = [];
+		var difference = (date1 > date2) ? date1 - date2 : date2 - date1;
+		results[3] = difference / 1000;
+		results[2] = results[3] / 60;
+		results[1] = results[2] / 60;
+		results[0] = results[1] / 24;
+		return results;
+
+    };
+            
+            
+        // Sending a string into the program and return it as a number
+        
+        var myStringNumber = function (string){
+            string = "456";
+            
+            parseInt("string")
+            
+            return string;
+        }
+
+            
+            
+            
+            
+            
+            
+            
+            
+        
             
             
             
@@ -158,16 +189,19 @@
         "myCap": myCap,
         "myPhoneString": myPhoneString,
         "myWorkingEmailString": myWorkingEmailString,
-        "myUrl": myUrl
+        "myUrl": myUrl,
+        "myStringSeperater": myStringSeperater,
+        "myStringNumber": myStringNumber
     }   
  } // end myLibrary
         
 //main code
 var newLib = new myLibrary();
 
-console.log("is this a capital letter " + newLib.myCap("hope this workI s"));
+console.log("small and " + newLib.myCap("hope this working. now"));
 
-console.log("This is the phonenumber " + newLib.myPhoneString("480-392-3346"));
+         // Phone number test
+console.log("Phone Number " + newLib.myPhoneString("480-923-3344"));
 
         // Email test   
 console.log("Email test " + newLib.myWorkingEmailString("wgrroseberry@gmail.com"));
@@ -177,13 +211,20 @@ console.log("Email test " + newLib.myWorkingEmailString("wgrroseberry@gmail.com"
   
  console.log("My url "+ newLib.myUrl("https://"));
  
-  console.log(UrlString);
+ 
 		 
 	   // Caps the first letter of all the words.
 		    
 console.log("hello is this working " + newLib.myCap("hello there"));
-      
-      
+
+          // My string seperator
+          
+console.log("My string seperator " + newLib.myStringSeperater("hello , how , are , you"));
+
+         // My string number
+
+console.log("My string number " + newLib.myStringNumber("456"));
+    
     
     
     
