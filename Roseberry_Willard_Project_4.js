@@ -1,7 +1,8 @@
 // Project 4
 // Willard Roseberry
 // Libarys
-   
+ 
+ // Begining of Problem number 1 //  
 // Checks for a valid phone number 123-456-7890
 
         var myPhoneString = function (phoneString){
@@ -26,7 +27,8 @@
         var myPhoneString = bool.toString();
         console.log(myPhoneString);
      
-      }
+       }     //End of Problem number 1./////////////////////////////
+       // Beginning of Problem number 2.
         
         // Checks for a valid Email String funtion
          
@@ -51,7 +53,8 @@
         console.log(emailString);
        
         }
-       
+       // End of Problem number 2
+	   // Start of Problem number 3
        // Is the string a URL (Does it start with http:// or https://)?
        
        
@@ -77,153 +80,74 @@
         
         }
         
-        
-     
-            
-        
-          //  capitalized("i went to the park in the rain");
-       
-            var firstLetterCap = function (firstLetter){
-                        capMe = (firstLetter);
-                        var words = "words".split(' ');
-                        var results = [ ];
-                        for (var i = 0; i < words.length; i++) {
-                            var  letter = words[i].charAt(0).toUpperCase();
-                            results.push(letter + words[i].slice(1));
-                            console.log(words);
-                        }
-                        
-                        return results.join(' ');
-                    // how to print out an array and put the first charater to a cap.
-                        };
-                      
-                      //  var capALetter = firstLetterCap;
-                     //   firstLetterCap("i sure hope this works i have been tring for a long time.");
-                      //  firstLetterCap("hello there");
-                       // console.log(results + " Here is the results");
-                     //   firstLetterCap( );
-                        
-                        
-                      
-                        
-    ////////////////////////////////////////////////////                    
-   //       var toMatch = "john w. smith";
-//var result = toMatch.replace(/(\w)(\w*)/g, function (_, i, r) {
-  //    return i.toUpperCase() + (r != null ? r : "");
-  //  }
-//)              
- ///////////////////////////////////////////////////                       
-               
-var myCap = function (initials){
-var name = "willard roseberry is going to the park";
-var initials = " ";
-var wordArray = name.split(",");
+        // End of Problem number 3
+		// Start of Problem number 4
+		
+       // First letter on each words gets a capital letter. 
+	   // Seting local variables               
+             var myCap = function (capForMe){
+             var name = "willard roseberry is going to the park";
+             var capForMe = " ";
+             var wordArray = name.split(",");
 
-for(var i=0;i<wordArray.length;i++)
-{
- initials += wordArray[i].replace("willard roseberry is going to the park","Willard Roseberry Is Going To The Park")  
-}
-console.log(initials);
-return initials;
-}
-//myCap("willard roseberry is going to the park");
-
-
-
-
-
-
-
-
-
-
-
-
-                        
-                        
-            //   console.log(firstLetter.toUpperCase());
-            //    console.log(newFirstLetter + "....newfirstletter");
-                
-            //    firstWorking =(firstLetter.charAt(0)).toUpperCase();
-                
-              //  console.log(firstWorking.charAt(0).toUpperCase());
-                
-             //   console.log(firstLetter.toUpperCase());
-            
-              //   firstLetterCap("i want this to work soon");
-    /*     var  toUpperCase = function (){
-            var words = this.split(' ');
-  var results = [];
-  for (var i=0; i < words.length; i++) {
-      var letter = words[i].charAt(0).toUpperCase();
-      results.push(letter + words[i].slice(1));
-            
-          }
-          return results.join(' ');
-          };
-          
-          toUpperCase("willard roseberry");
-          
-          
-        
-        var myCapital = function (upperLetter){
-            var txt = ("'a,b,c,d,e,f,g'");
-            
-            var arry = txt.split(',');
-            console.log(arry);
-            
-            
-            
-            
+		      for(var i=0;i<wordArray.length;i++)
+        {
+			   capForMe += wordArray[i].replace("willard roseberry is going to the park","Willard Roseberry Is Going To The Park")  
         }
-        
-        String.prototype.capitalize = function() {
-    return this.charAt(0).toUpperCase() + this.slice(1);
-}
-
-
-      "hello world".capitalize();
-                        
-           function capitalize(s)
-{
-    return s[0].toUpperCase() + s.slice(1);
-
-           }
-           
-          var myfuntion = capitalize("hello there"); 
-           
-     //  myfuntion("hello there");
-       
-       console.log(myfuntion);
-       
-     //  puts 'one TWO three foUR'.split(' ').map(&:capitalize).join(' ')
-          
-          
+               console.log(capForMe);
                 
-                
-                
-        
-           
-           
-            
-           function capitalizeMe(obj) {
-        val = obj.value;
-        newVal = '';
-        val = val.split(' ');
-        for(var c=0; c < val.length; c++) {
-                newVal += val[c].substring(0,1).toUpperCase() +
-             val[c].substring(1,val[c].length) + ' ';
         }
-        obj.value = newVal;
-}
- 
-            capitalizeMe("it this going to workingPhoneString?");
-            console.log(obj);
+        // End of Problem number 4
+        // Start of Problem number 5
+        
+            var myStringSeperater = function (ListOfString, seperator, inPlaceOf){
+            var firstString = "I, went , to , the, park, and , played, a , game.";
+            console.log(firstString);
+       
+            var n = firstString.replace(/,/g,"/");
+            console.log(n);
+                
+                                     
+            return firstString;
+            }
+            
+            myStringSeperater();
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+        
+
+   
+
+
+
+
+
+
+
+
+                        
+                        
+   
+
+          
+                
+                
          
          
 
 
-        //Iwenttotheparkintherain.
+       
         
         
         
@@ -239,29 +163,16 @@ return initials;
        //  myWorking http:// and https://
   
          var myhtmlString = myUrl("https://")
+		 
+	   // Caps the first letter of the words.
+		    myCap();
          
         
     
-    */
     
     
-       function fixCase(fixThis) {
- 
- 
-    String.prototype.toProperCase = function () {
- 
-        return this.replace(/\w\S*/g, function (txt) {
-            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-        });
-    };
-  
-    fixThis.toProperCase();
-    console.log(fixThis.toProperCase()); // Logs Shannon Plesh in proper case.
-}
-// problem 5 ends here.
-
-  fixCase("willard roseberry");
     
+       
     
     
     
