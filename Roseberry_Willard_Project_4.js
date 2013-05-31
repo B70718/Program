@@ -5,7 +5,7 @@
  * Project 4
  * Library of Functions
  */
-  // Global Variables
+  // Global Variables                                   // Project 3 lost points for not puting all the Global Variables on the top.
   
          var space = " ";
          var comma = ",";
@@ -93,13 +93,13 @@
         
         }
         
-        // End of Problem number 3
-	// Start of Problem number 4//	
-       // First letter on each words gets a capital letter. 
-      // Seting local variables               
+         // End of Problem number 3
+	 // Start of Problem number 4//	
+         // First letter on each words gets a capital letter. 
+         // Seting local variables               
              var myCap = function (capForMe){
              var wordArray = capForMe.split(" ");
-             var capForMe = [];
+             var capForMe = [];                                     // Project 3 lost points for not encapsulating loops inside a funtion
 	     for(var i = 0; i < wordArray.length; i++){
 			   var capLetter = wordArray[i].charAt(0).toUpperCase();
                            capForMe.push(capLetter + wordArray[i].slice(1));
@@ -109,25 +109,8 @@
           return newOneString;
                 
         }
-        // End of Problem number 4//
-        // Start of Problem number 5//
-        
-            var myStringSeperater = function (listOfString, seperator, inPlaceOf){
-                 var answer = [];
-                 var mywords = listOfString.split(" ");
-              for (var i = 0; i < mywords.length; i++) {
-                var letter = mywords[i]
-              //  seperator.push("/");
-                answer.push(seperator + mywords[i].slice(1));
-            };
-                newString = answer.join(" ");      
-          //  var n = firstString.length   
-            return newString;
-            }
-            
-           
-         // End of Problem number 5 //   
-        // Start of Problem number 6 //
+        // End of Problem number 4// 
+        // Start of Problem number 5 //
         // Find the differents between two dates
         
                 var dateFunction = function (one,two) {
@@ -140,8 +123,8 @@
 
     };
             
-         // End of Problem number 6 //
-         // Start of Problem number 7 //
+         // End of Problem number 5 //
+         // Start of Problem number 6 //
         // Sending a string into the program and return it as a number
         
        
@@ -153,14 +136,14 @@
             return string;
         }
         
-         // End of Problem number 7 //
-         // Start of Problem number 8 //
+         // End of Problem number 6 //
+         // Start of Problem number 7 //
          
          /* Given a string that is a list of things separated by a given string, as well as another//
          
         string separator, return a string with the first separator changed to the second: “a,b,c” +
           “,” + “/” --> “a/b/c”. */
-         var mySplitString = function (stringWithComma, replaceSeparator, tempestString){
+         var mySplitString = function (stringWithComma, replaceSeparator){
                var stringsArray = stringWithComma.split(replaceSeparator);
                
                for (var i = 0; i < stringsArray.length; i++)
@@ -168,76 +151,87 @@
                return stringsArray;     
          }
          
-         // End of Problem number 8 //
-         // Start of Problem number 9//
+         // End of Problem number 7 //
+         // Start of Problem number 8 //
          
-        var smallAndGreat = function(a){
+        var smallAndGreat = function(arr){
          
-         {var t=this,r=Number.POSITIVE_INFINITY,i;
-	for (i=0;i<t.length;i++) if (a<t[i] && t[i]<r) r=t[i];
-	return r;
+         {var t = this,r = Number.pos,i;
+         // declareing a for loop and puting it in an array
+	for (i = 0; i < t.length ; i++) if (a < t[i] && t[i]<r) r=t[i];
+	return arr;
                    }
-
+         // giveing the array numbers to work with
            var arr=[1,6,12,14],n=5;
      
         }
+           // End of Problem number 8 //
+           // Start of Problem number 9 //
+           
+           // Checks to see is the number above or below a number is within a certain percent
+	        var myMathFuntion = function (num, compareNum, percent) {
+		var percentage = (num /compareNum) * 100;
+		if ((num >= compareNum && percentage >= percent) || (num < compareNum && percentage < percent)) {
+			return false;
+		} else {
+			return true;
+		};
+	};
+           
+           // End of Problem number 9 //
          
-         
-         
-    return {
+        return {
         "myCap": myCap,
         "myPhoneString": myPhoneString,
         "myWorkingEmailString": myWorkingEmailString,
         "myUrl": myUrl,
-        "myStringSeperater": myStringSeperater,
         "myStringNumber": myStringNumber,
         "mySplitString": mySplitString,
         "dateFunction": dateFunction,
-        "smallAndGreat": smallAndGreat
+        "smallAndGreat": smallAndGreat,
+        "myMathFuntion": myMathFuntion
     }   
- } // end myLibrary
+ }   // end myLibrary
         
-//main code
+     //main code
 var newLib = new myLibrary();
 
-console.log("Number 1 Problem small and Large. " + newLib.myCap("we went to the park and had some fun"));
+     // Phone number test
+console.log("Number 1 Problem Phone Number " + newLib.myPhoneString("480-923-3344"));
 
-         // Phone number test
-console.log("Number 2 Problem Phone Number " + newLib.myPhoneString("480-923-3344"));
+    // Email test   
+console.log("Problem 2 Email test " + newLib.myWorkingEmailString("wgrroseberry@gmail.com"));
 
-        // Email test   
-console.log("Problem 3 Email test " + newLib.myWorkingEmailString("wgrroseberry@gmail.com"));
-       
-         
-       //  myWorking http:// and https://
+    //  myWorking http:// and https://
   
- console.log("Problem 4 My url "+ newLib.myUrl("https://"));
-  		 
-	   // Caps the first letter of all the words.
-		    
-console.log(" Problem 5 hello is this working " + newLib.myCap("hello there"));
+console.log("Problem 3 My url "+ newLib.myUrl("https://"));
 
-          // My string seperator
-          
-          
-console.log("Problem 6 Differnt days " + newLib.dateFunction());     ///////////////////////////  
-          
-console.log("Problem 7 My string seperator " + newLib.myStringSeperater("hello" , "how " , " are  you"));
+    // Caps the first letter of all the words.
 
+console.log("Number 4 Problem small and Large. " + newLib.myCap("we went to the park and had some fun"));
+         
+    // My string seperator
+              
+console.log("Problem 5 Differnt days " + newLib.dateFunction());     
+          
          // My string number
 
-console.log("Problem 8 My string number " + newLib.myStringNumber("456"));
+console.log("Problem 6 My string number " + newLib.myStringNumber("456"));
        
         // My split string seperator
             
-console.log("Problem 9 My split string seperator " + newLib.mySplitString(tempestString,space, "hello"));
-console.log("Problem 9 My split string seperator " + newLib.mySplitString(tempestString));
-console.log("Problem 9 My split string seperator " + newLib.mySplitString( monthString,space, "hello"));
+console.log("Problem 7 My split string seperator " + newLib.mySplitString(tempestString,space, "hello"));
+console.log("Problem 7 My split string seperator " + newLib.mySplitString(tempestString));
+console.log("Problem 7 My split string seperator " + newLib.mySplitString( monthString,space, "hello"));
 
-// problem 10
+      // My srtring number
 
-console.log("Problem 8 My string number " + newLib.smallAndGreat(12));
-console.log(" Here is the number " + newLib.smallAndGreat(arr.smallAndGreat(n)); // give 6 
+console.log("Problem 8 My string number " + newLib.smallAndGreat(6));
+
+     // My fuzzy logic
+
+console.log("Problem 9 My fuzzy logic " + newLib.myMathFuntion(5,10,50));
+
   
             
              
