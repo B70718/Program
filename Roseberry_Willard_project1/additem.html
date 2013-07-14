@@ -6,11 +6,11 @@
 <!-- HTML TAG-->
 <html>
 <head>
-        <!-- Meta content lets the browser know what type of information that is in the document. -->
-        <meta charset="utf-8" />
+        <!-- Meta content lets the browser know what type of in
+        ation that is in the document. -->
+        <meta charset="UTF-8" />
         <meta name="description" content="All kinds of Piza that is sold in our Piza shop" />
         <meta name="keywords" content="piza, chese, peperoni, meatlovers" />
-        
 <!--Search engine robots need this to index in Google and other search engines.-->
         <meta name="robots" content="index, follow" />
 <!--Make the display the corect size for an iPhone -->
@@ -22,37 +22,34 @@
         <meta name="HandheldFriendly" content="True">       
 <!--MobileOptimized support for IE and mobile-optimezed HTML.-->
         <meta name="MobileOptimized" content="320"/>
-<title>form</title>     
-<link rel="stylesheet" href="css/styles.css" type="text/css" />    
-<script src="js/main.js" type="text/javascript"></script>
-    </script>
-
+		<title>Pizzaordered</title>     
+<link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-<header>
-    <h1>Willard's Pizza Shop</h1>
-    <h1>Order a Pizza page</h1>
-  <h2>The worlds best Pizza!</h2>
-</header>
-    <fieldset>
-    	<legend>How many pizzas do you wish to order?</legend>
+<body class="eatincarryout">
+		<header> <h1 class="Willardspizzashop">Willard's Pizza Shop </h1><h1 class="Willardspizzashop">        Order a Pizza page</h1> 
+  		<h2 class="Pizza">The worlds best Pizza!</h2>
+		</header>
+<fieldset>
+    	<p class="Howmany">
+    	  <legend>How many pizzas do you wish to order?</legend>
+  </p>
     	<ul>
-        	<li>Please use the slider for the amount.
+  <li class="slider">Please use the slider for the amount.</li>
             	<ul>
-                	<li><input type="range"</li>
-    </fieldset>
-    <fieldset>
-    	<legend>Do you want to eat in or take carryout?</legend>
-        <ul>
-        	<li>Pick the one you want to do.
-            	<ul>
-                	<li><input type="radio" checked value="eat in" id="eat in" name="order" /><label for"order">Eat </label>In<li>
-                    <li><input type="radio" checked value="take out" id="take out" name="order" /><label for"order">Take </label>out<li>
-                  </li>
-              </ul>
+  <li><input type="range"</li>
+</fieldset>
+<fieldset>
+<legend><h2>Do you want to eat in or take carryout?</h2></legend>
+    <ul>
+       	<li>Pick the one you want to do.
+           	<ul>
+               	<li><input type="radio" checked value="eat in" id="eat in" name="order" /><label for"order">Eat </label>In<li>
+                <li><input type="radio" checked value="take out" id="take out" name="order" /><label for"order">Take </label>out<li>
+               	  </li>
+   		  </ul>
 <li>To comfirm your order by email please enter your email adress below.</li>
                 <li><label for="email">Email:</label><input type"email" id"email" placeholder="example@email.com" /></li>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="../Roseberry_Willard_project1/js/main.js"></script>
                 
 <form action="#" method="post">
     </fieldset>
@@ -70,26 +67,33 @@
                 <li><input type="checkbox"  value="Chese" id="Chese"<label for="Chese">Chese</label><li>
                 <li><input type="date" value="Date" id="Date"<label for="Date Pissa was added">Date Pizza was added</li>
   </fieldset> 
-        <fieldset>
-        	<legend>Comments</legend>
-            <ul>
+       
+        	
+<form action="#" method="post" id="pizzaordered" />
+	<fieldset id="contactFieldset">
+	<legend>Comments</legend>
+	<span>* field are required.</span>
+            <ul id="errors"></ul>
+            <ul id="questions">
+            <ul id="select"><label for="group">*Add To Group:</label><br /></li>
+            <li><label for="fname">*First Name: </label><input type= "text" id= "fname" /></li>
             	<li><label for="comments">We want to know how well we did while serving you. Please enter your comments here.:</label><textarea id="comments"></textarea></li>
                 <li>
                 	<label for="how often">How ofter pizza is orderd</label>
-                    <select id="often">
-                    	<optgroup label="How often">
+                   <select id="often">
+     <!--              	<optgroup label="How often">
                         	<option value="Once a month">Once a month</option>
                             <option value="Once a week">Once a week</option>
                             <option value="Every day">Every day</option>
                       </optgroup>
-                  </select>
-                        
+                  </select></li>
+        -->                 
               <li>Whats your favorite pizza?<input type="comments">:</label> <textarea></textarea></li>
                          <li>Please enter additional comments above.<input type="hidden" value="true" /></li>
           </ul>
   </fieldset>
                        <input type="submit" value="Please submit my order" />
-                   <a href="additem.html">Clear Stored Data</a> <a href="additem.html">Display Data</a>
+  <a href="../VFW Project/additem.html">Clear Stored Data</a> <a href="../VFW Project/additem.html">Display Data</a>
 </form>
 </body>
 </html>

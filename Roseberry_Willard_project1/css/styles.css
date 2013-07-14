@@ -1,12 +1,55 @@
-/*
-
-Wiillard Roseberry
- 
-*/
-
-/* iPhone app */
-body(font-family:Arial, Helvetica, san-serif;width; 571px;margin; auto;padding; 10px;}
-
+body {
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    margin: 1.5em auto;
+    padding: 1.5em;
+    background-color: white;
+    color: #4D4B39;
+    max-width: 35em;
+    border: 0.75em solid #A6A59C;
+    line-height: 1.5em;
+}
+p {
+    margin: 1.5em 0;
+}
 h1 {
-	margin: 50px;
+	background-color: #00FFFF;
+	color: #E1DFD3;
+	font-size: larger;
+	padding: 0.75em;
+	margin: -0.75em -0.75em 0.75em -0.75em;
+	background-image: none;
+}
+h2 {
+	background-color: #99FFFF;
+	color: #0000FF;
+	font-size: 150%;
+	padding: 1em;
+	margin: -1em -1em 1em -1em;
+	font-style: italic;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+}
+h1 + h2 {
+    margin-top: -2em;
+    padding-top: 0;
+}
+.backgroundcolor {
+	background-color: #CFF;
+}
+.Willardspizzashop {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 36px;
+	font-style: italic;
+	line-height: normal;
+	font-weight: inherit;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #00F;
+	text-decoration: none;
+	text-align: justify;
+}
+html {
+    background-color: #E1DFD3;
 }
