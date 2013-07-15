@@ -12,14 +12,14 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	
 	// Make a select field
-	function howOften(){
-		var formTag = document.getElementByTagName("form"),
-		selectLi = $('often'),
-		makeSelect = document.createElement('often');
-		makeSelect.setAttribute("groups");
-	for(var i = 0, j = contactGroups.lengh; i<j; i++){
+	function makePizza(){
+		var formTag = document.getElementsByTagName("form"),
+		selectLi = $('select'),
+		makeSelect = document.createElement('select');
+	 	makeSelect.setAttribute("id", "groups"); 
+	for(var i = 0, j = favioratePizza.length; i<j; i++){
 		var makeOption = document.createElement('option');
-		var optText = contactGroups[i];
+		var optText = favioratePizza[i];
 		makeOption.setAttribute("value", optText);
 		makeOption.innerHTML = optText;
 		makeSelect.appendChild(makeOption);
@@ -27,8 +27,13 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	selectLi.appendChild(makeSelect);
 }
-// Variables
-var contactGroups = ["--How often--", "Daily", "Weekly", "Monthly", "Ocationaly"];
-howOften();
 
+function storeData() {
+	localStorage.setItem("test", "hello");
+	alert(localStorage.length);
+}
+// Variables
+var favioratePizza = ["--How often?--", "Daily", "Weekly", "Monthly", "Ocationaly", "Never", "All the time"];
+makePizza();
 });
+
