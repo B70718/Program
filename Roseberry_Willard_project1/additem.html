@@ -5,28 +5,30 @@
 <! --My pizza shop-->
 <!-- HTML TAG-->
 <html>
-<head>
+	<head>
         <!-- Meta content lets the browser know what type of in
         ation that is in the document. -->
         <meta charset="UTF-8" />
-        <meta name="description" content="All kinds of Piza that is sold in our Piza shop" />
-        <meta name="keywords" content="piza, chese, peperoni, meatlovers" />
-<!--Search engine robots need this to index in Google and other search engines.-->
+        <meta name="description" content="All kinds of Piza that is 		sold in our Piza shop" />
+        <meta name="keywords" content="piza, chese, peperoni, 			 		meatlovers" />
+		<!--Search engine robots need this to index in Google and 				        other search engines.-->
         <meta name="robots" content="index, follow" />
-<!--Make the display the corect size for an iPhone -->
-        <!-- Viewport displays the content according to the device it is going to be displayed on -->
-        <meta name="viewport" content="user-scalable=no, width=device-width" />  
-<!-- For droid phones -->
-        <meta name="viewport" content="target-densitydpi=device-dpi" />        
-<!-- For older phone support older phones do not supoort the viewport command -->
+		<!--Make the display the corect size for an iPhone -->
+        <!-- Viewport displays the content according to the device 		    	it is going to be displayed on -->
+        <meta name="viewport" content="user-scalable=no, 		      	 width=device-width" />  
+         <!-- For droid phones -->
+        <meta name="viewport" content= "target-densitydpi=device-dpi" /> 		              
+		<!-- For older phone support older phones do not supoort 		        the viewport        command -->
         <meta name="HandheldFriendly" content="True">       
-<!--MobileOptimized support for IE and mobile-optimezed HTML.-->
+		<!--MobileOptimized support for IE and mobile-optimezed 		        HTML.-->
         <meta name="MobileOptimized" content="320"/>
-		<title>Pizzaordered</title>     
-<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<title>Pizzaordered</title>
+        <style type="text/css">
+        </style>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body class="eatincarryout">
-		<header> <h1 class="Willardspizzashop">Willard's Pizza Shop </h1><h1 class="Willardspizzashop">        Order a Pizza page</h1> 
+		<header> <h1 id="start"> class="Willardspizzashop">Willard's Pizza Shop </h1><h1 class="Willardspizzashop">        Order a Pizza page</h1> 
   		<h2 class="Pizza">The worlds best Pizza!</h2>
 		</header>
 <fieldset>
@@ -72,24 +74,26 @@
 <form action="#" method="post" id="favioratepizza" />
 	<fieldset id="contactFieldset">
 	<legend>Tell us how we did</legend>
-	
+	<span Please tell us how we did.</span>
             <ul id="errors"></ul>
-            <ul id="questions"></form>
-		 
+            <ul id="questions"></ul>
+	   
             	<li><label for="comments">We want to know how well we did while serving you. Please enter your comments here.
                 </label><textarea id="comments"></textarea></li>
                 <li>
-		    <label for="how often">How often pizza is orderd?</
-				
+		    <label for="how often">How often pizza is orderd?</label> 
+		     <li id="select"><label for = "group"<"how often"></label><br /></li> 
+		   
+		    
+			</ul>	
                          <li>Please enter additional comments above.</li>
-		<label> 
-		    <li id="select"></li><br /></li>
+		
                  	 
           </ul>
   </fieldset>
                        <input type="submit" value="Please submit my order" id="submit" /><br />
-				<a href="#" id=" ">Clear Stored Data</a> <br> <br>
-				<a href="#" id="DisplayData">Display Data</a>
-
-</body>
+				<a href="#" id="clear">Clear Stored Data</a> <br> <br>
+				<a href="#" id="displaydata">Display Data</a>
+		</form>
+	</body>
 </html>

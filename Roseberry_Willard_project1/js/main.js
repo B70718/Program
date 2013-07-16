@@ -11,13 +11,21 @@ window.addEventListener("DOMContentLoaded", function(){
 		return theElement;
 	}
 	
-	// Make a select field
+	//Set link & Clink Events
+/*	var displayLink = $('displayLink');
+	displayLink.addEventListener("click", getData);
+	var clearData = $('clear');
+	clearLink.addEventListener("click", clearLocal);
+	var save =$('submit');
+	save.addEventLister("click", storeData);
+	*/
+	// Make a select field 
 	function makePizza(){
 		var formTag = document.getElementsByTagName("form"),
 		selectLi = $('select'),
 		makeSelect = document.createElement('select');
 	 	makeSelect.setAttribute("id", "groups"); 
-	for(var i = 0, j = favioratePizza.length; i<j; i++){
+	    for(var i = 0, j = favioratePizza.length; i<j; i++){
 		var makeOption = document.createElement('option');
 		var optText = favioratePizza[i];
 		makeOption.setAttribute("value", optText);
@@ -25,10 +33,24 @@ window.addEventListener("DOMContentLoaded", function(){
 		makeSelect.appendChild(makeOption);
 		
 	}
-	selectLi.appendChild(makeSelect);
+	selectLi.appendChild(makeSelect);  
 }
 
-function storeData() {
+
+	function storeData() {
+		var id   = Math.floor(Math.random()*1000000001);
+		// Geting all the form field values
+		// Object will contain a array and input values.
+		var item      = {};
+		item.group    = ["Group", $('groups').value];
+		item.fname    =["First Name", $('fname').value];
+		item.lname    =["Last Name", $('lname').value];
+		item.email    =["Email:", $('email').value];
+		// Save information into local storage
+		// Use stringify to convert our object to a string.
+		localStorage.setItem(id, JSON.stringify(item));
+		alert("Your Faviorate Pissa is in the Database");
+		
 	localStorage.setItem("test", "hello");
 	alert(localStorage.length);
 }

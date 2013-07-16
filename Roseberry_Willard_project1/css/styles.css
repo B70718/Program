@@ -1,3 +1,30 @@
+<style type="text/css">
+body,td,th {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 18px;
+	color: #66FFFF;
+}
+body {
+	background-image: none;
+	font-family: "MS Serif", "New York", serif;
+	font-size: 16px;
+	font-style: italic;
+	line-height: normal;
+	font-weight: bolder;
+	font-variant: normal;
+	color: #F30;
+	border-top-style: solid;
+	border-right-style: dotted;
+	border-bottom-style: solid;
+	border-left-style: groove;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 12px;
+}
+
 body {
     font-family: "Lucida Grande", "Arial", sans-serif;
     margin: 1.5em auto;
