@@ -4,20 +4,8 @@ body,td,th {
 	font-size: 18px;
 	color: #66FFFF;
 }
-body {
-	background-image: none;
-	font-family: "MS Serif", "New York", serif;
-	font-size: 16px;
-	font-style: italic;
-	line-height: normal;
-	font-weight: bolder;
-	font-variant: normal;
-	color: #F30;
-	border-top-style: solid;
-	border-right-style: dotted;
-	border-bottom-style: solid;
-	border-left-style: groove;
-}
+
+	
 h3 {
 	font-size: 18px;
 }
@@ -25,26 +13,57 @@ h4 {
 	font-size: 12px;
 }
 
-body {
-    font-family: "Lucida Grande", "Arial", sans-serif;
-    margin: 1.5em auto;
-    padding: 1.5em;
-    background-color: white;
-    color: #4D4B39;
-    max-width: 35em;
-    border: 0.75em solid #A6A59C;
-    line-height: 1.5em;
-}
+
 p {
-    margin: 1.5em 0;
+	background-color: #0F6;
+	font-family: "Comic Sans MS", cursive;
+	letter-spacing: 0.10em;
+	word-spacing: normal;
+	vertical-align: text-top;
+	text-align: left;
+	white-space: normal;
+	display: block;
+	padding: 2px;
+	clear: none;
+	float: none;
+	height: auto;
+	width: auto;
+	margin-top: 1.5em;
+	margin-right: 0;
+	margin-bottom: 1.5em;
+	margin-left: 0;
+	border: thin groove #99C;
+	list-style-type: upper-roman;
+	list-style-position: inside;
+	position: static;
+	visibility: inherit;
+	z-index: auto;
+	left: auto;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	clip: rect(auto,auto,auto,auto);
+	cursor: w-resize;
+	page-break-before: auto;
 }
 h1 {
-	background-color: #00FFFF;
-	color: #E1DFD3;
+	background-color: #0099FF;
+	color: #0033FF;
 	font-size: larger;
 	padding: 0.75em;
-	margin: -0.75em -0.75em 0.75em -0.75em;
 	background-image: none;
+	font-family: "Comic Sans MS", cursive;
+	font-style: oblique;
+	line-height: 50px;
+	width: 300px;
+	margin-top: -0.75em;
+	margin-right: -0.75em;
+	margin-bottom: 0.75em;
+	margin-left: -0.75em;
+	list-style-type: upper-roman;
+	page-break-before: left;
+	border: thin solid #FFF;
+	cursor: pointer;
 }
 h2 {
 	background-color: #99FFFF;
@@ -59,7 +78,7 @@ h2 {
 	text-transform: none;
 }
 h1 + h2 {
-    margin-top: -2em;
+    margin-top: 2em;
     padding-top: 0;
 }
 .backgroundcolor {
@@ -71,12 +90,35 @@ h1 + h2 {
 	font-style: italic;
 	line-height: normal;
 	font-weight: inherit;
-	font-variant: normal;
-	text-transform: capitalize;
 	color: #00F;
-	text-decoration: none;
-	text-align: justify;
 }
 html {
-    background-color: #E1DFD3;
+	background-color: #FFFFFF;
+}
+label {
+	font-family: "Times New Roman", Times, serif;
+	color: #03F;
+	border-top-color: #9FF;
+	border-right-color: #9FF;
+	border-bottom-color: #9FF;
+	border-left-color: #9FF;
+	background-color: #9FF;
+	border-top-style: dotted;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-left-style: dotted;
+	font-size: 16px;
+}
+legend {
+	font-family: "Comic Sans MS", cursive;
+	color: #30F;
+	background-color: #CFF;
+	word-spacing: 1em;
+	letter-spacing: .35em;
+	white-space: normal;
+}
+fieldset {
+	color: #039;
+	text-align: left;
+	white-space: normal;
 }

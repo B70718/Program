@@ -10,6 +10,13 @@
 	text-shadow: 1px 2px 2px #0FC;
 	position: relative;
 	color: #00F;
+	background-color: #3CF;
+	word-spacing: normal;
+	border-top-style: outset;
+	border-right-style: outset;
+	border-bottom-style: outset;
+	border-left-style: outset;
+	list-style-type: disc;
 }
 #heading {
 	background-color: #39F;
@@ -34,7 +41,15 @@
 	font-weight: bolder;
 	font-variant: small-caps;
 	text-transform: capitalize;
-	color: #F30;
+	color: #06C;
+	text-decoration: none;
+	background-color: #9FC;
+	word-spacing: 0.50em;
+	width: auto;
+	border-top-color: #03C;
+	border-right-color: #03C;
+	border-bottom-color: #03C;
+	border-left-color: #03C;
 }
 .BuyPizza {
 	font-family: Arial, Helvetica, sans-serif;
