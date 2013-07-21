@@ -36,13 +36,11 @@ p {
 	list-style-type: upper-roman;
 	list-style-position: inside;
 	position: static;
-	visibility: inherit;
 	z-index: auto;
 	left: auto;
 	top: auto;
 	right: auto;
 	bottom: auto;
-	clip: rect(auto,auto,auto,auto);
 	cursor: w-resize;
 	page-break-before: auto;
 }
@@ -63,7 +61,7 @@ h1 {
 	list-style-type: upper-roman;
 	page-break-before: left;
 	border: thin solid #FFF;
-	cursor: pointer;
+	
 }
 h2 {
 	background-color: #99FFFF;

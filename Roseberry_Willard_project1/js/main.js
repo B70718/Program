@@ -38,25 +38,26 @@ if ($('Pizzalovers').checked){
 	
   }else{
 	favoritepizza = "No"
-  }
+  };
 
 }
 
-function toggleControls(n) {
+function toggleMyControls(n) {
 	switch(n) {
 		case "on":
-	//	$('contactForm').style.display = "none";
+		
+		$('pizzaForm').style.display = "none";
 		$('clear').style.display = "inline";
-	//	$('displayLink').style.display = "none";
-		$('addNew').style.display = "inline";
+		$('toggle').style.display = "inline";
+		$('displayData').style.display = "none";
+		
 		break;
 	        case "off":
-		$('contactForm').style.display = "block";
+		$('pizzaForm').style.display = "block";
 		$('clear').style.display = "inline";
-		$('displayLink').style.display = "inline";
-		$('addNew').style.display = "none";
-		$('items').style.display = "none";
-			
+		$('toggle').style.display = "block";
+		$('displayData').style.display = "block";
+		 
 		break;
 	     default:
 		return false;
@@ -64,10 +65,12 @@ function toggleControls(n) {
 }
 
 
-	function storeData() {
+	function storeMyData() {
 		var id   = Math.floor(Math.random()*1000000001);
+		
 		// Geting all the form field values
 		// Object will contain a array and input values.
+		
 		getCheckboxes();
 		var item           = {};
 	 	item.group         = ["Group", $('groups').value];
@@ -82,18 +85,18 @@ function toggleControls(n) {
 		
 		// save to local storage
 		localStorage.setItem(id, JSON.stringify(item));
-		alert("Your favioate pizza is saved!");
+		alert("Your faviate pizza is saved!");
 	}
 	
-	function getData() {
-		toggleControls("on");
+	function getMyData() {
+		toggleMyControls("on");
 		//Write information for the Local Storeage to the brower.
 		var makeDiv = document.createElement('div');
 		makeDiv.setAttribute("id", "items");
 		var makeList = document.createElement('ul');
 		makeDiv.appendChild(makeList);
 		// document.body is writeing the user contents to the screen
-		// for the use to see.
+		// for the user to see.
 		document.body.appendChild(makeDiv);
 		$('items').style.display = "block";
 		for (var i = 0, len =localStorage.length; i<len;i++) {
@@ -115,7 +118,7 @@ function toggleControls(n) {
 		}
 	}
 	
-	function clearLocal() {
+	function clearLocalStorage() {
 		if(localStorage.length === 0){
 			alert("There is no data to clear.")
 		}else{
@@ -130,16 +133,24 @@ function toggleControls(n) {
 var favioratePizza = ["--How often?--", "Daily", "Weekly", "Monthly", "Ocationaly", "Never", "All the time"],
      favoritepizza = "No"
      ;
-
+makePizza();
 
 //Set link & Clink Events
-	var displayLink = $('displayData');
-	displayData.addEventListener("click", getData);
-	var clearData = $('clear');
-	clear.addEventListener("click", clearLocal); 
-	var save =$('submit');
-	 save.addEventListener("click", storeData);
-makePizza();
+   
+	var triggerMyControls =$('toggle');
+	triggerMyControls.addEventListener("click", toggleMyControls);	
+	
+	var displayLink =$('displayData');
+	displayLink.addEventListener("click", getMyData);
+	
+	
+	var clearData =$('clear');
+	//var changeData = $()
+	clear.addEventListener("click", clearLocalStorage);
+	
+	 var saveData =$('submit');
+	 saveData.addEventListener("click", storeMyData);
+	
 
 });
 
