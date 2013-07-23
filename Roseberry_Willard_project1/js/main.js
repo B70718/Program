@@ -101,22 +101,81 @@ function toggleMyControls(n) {
 		$('items').style.display = "block";
 		for (var i = 0, len =localStorage.length; i<len;i++) {
 			var makeli = document.createElement('li');
+			var createLinks = document.createElement('li');
 			makeList.appendChild(makeli);
 			var key = localStorage.key(i);
 			var value = localStorage.getItem(key);
 			// make from string to an object using json
 			var obj = JSON.parse(value);
-		        var makeSubList = document.createElement('ul');
-			makeli.appendChild(makeSubList);
+		        var makeSubLink = document.createElement('ul');
+			makeli.appendChild(makeSubLink);
 			for (var n in obj) {
 				var makeSubli = document.createElement('li');
-				makeSubList.appendChild(makeSubli);
+				makeSubLink.appendChild(makeSubli);
 				var optSubText = obj[n][0]+" "+obj[n][1];
-				makeSubli.innerHTML = optSubText; 
+				makeSubli.innerHTML = optSubText;
+				makeSubLink.appendChild(createLinks);
 		
 			}
+			makeEditAndDeleteLinks(localStorage.key(i), createLinks); // create our edit and delete links
 		}
 	}
+	// Link the seperate item to be able to edit and delete seperate for each stored item on the display
+	function makeEditAndDeleteLinks(key, createLinks){
+	// Create the edit items and delet
+	var editSingleItem = document.createElement('a');
+	editSingleItem.href = "#";
+	editSingleItem.key = key;
+	var editMyText = "Edit faviorate pizza";
+	editSingleItem.addEventListener("click", editMyPizzaItem);
+	editSingleItem.innerHTML= editMyText;
+	createLinks.appendChild(editSingleItem);
+	
+	//add a line break inbetween the dynamic edit and delete links
+	var breakMyTag = document.createElement('br');
+	createLinks.appendChild(breakMyTag);
+	
+	
+	
+	
+	  //add a delete a single item link
+	  var  deleteMyLink = document.createElement('a');
+	  deleteMyLink.href = "#";
+	  deleteMyLink.key = key;
+	  var deleteMyText = "Delete my faviorate Pizza";
+	  // deleteMyLink.addEventListener("click"), deleteMyFavioratePizza);
+	  deleteMyLink.innerHTML = deleteMyText;
+	  createLinks.appendChild(deleteMyLink); 
+	}
+	
+	function editMyPizzaItem() {
+	    // Get information from the faviorate Pizza Storage
+	    var value = localStorage.getItem(this.key);
+	    var item = JSON.parse(value);
+	    
+	   //Show the form
+	    toggleMyControls("off");
+	    
+	    //populate the form field with the current localStorage values.
+	    $('groups').value = item.group[1];
+	    $('fname').value = item.fname[1];
+	    $('lname').value = item.lname[1];
+	    $('email').value = item.email[1];
+	    var checkbox = document.forms[0].Pizzalovers;
+	    for (var i=0; i<checkbox.length; i++){
+		if (checkbox[i].value == "Pizzalovers" && item.Pizzalovers == "Peperoni"){
+                   checkbox[i].setAttribute("checked", "checked");
+		}else if (checkbox[i].value == "pizzalovers" && item.Pizzalovers[1] == "pizzalovers") {
+			checkbox[i].setAttribute("checked", "checked");
+		}
+	      }
+	      if (item.favorite[1] == "Yes") {
+		
+		$('Pizzalovers').setAttribute("checked", "checked");
+	      }
+	      
+	 }
+	
 	
 	function clearLocalStorage() {
 		if(localStorage.length === 0){
@@ -129,13 +188,13 @@ function toggleMyControls(n) {
 		
 		}
 	}
-// Variables
-var favioratePizza = ["--How often?--", "Daily", "Weekly", "Monthly", "Ocationaly", "Never", "All the time"],
-     favoritepizza = "No"
-     ;
-makePizza();
+	// Variables
+	var favioratePizza = ["--How often?--", "Daily", "Weekly", "Monthly", "Ocationaly", "Never", "All the time"],
+	favoritepizza = "No"
+	 ;
+	makePizza();
 
-//Set link & Clink Events
+	//Set link & Clink Events
    
 	var triggerMyControls =$('toggle');
 	triggerMyControls.addEventListener("click", toggleMyControls);	
