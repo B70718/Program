@@ -65,9 +65,18 @@ function toggleMyControls(n) {
 }
 
 
-	function storeMyData() {
-		var id   = Math.floor(Math.random()*1000000001);
+	function storeMyData(key){
+		if (!key) {
+		// if there is no key, this mean this is a brand new item and requires a new key
 		
+		var id = Math.floor(Math.random()*1000000001);
+		
+		}else{
+		// Set the id to the existing key we're editing so that it will save over the data
+		// the key is the same key that's been passed along from the editSubmit event handler
+		//to the validate function, and then passed here, into the storedata function
+		id = key;
+		}
 		// Geting all the form field values
 		// Object will contain a array and input values.
 		
@@ -117,12 +126,12 @@ function toggleMyControls(n) {
 				makeSubLink.appendChild(createLinks);
 		
 			}
-			makeEditAndDeleteLinks(localStorage.key(i), createLinks); // create our edit and delete links
+			 makeEditAndDeleteLinks(localStorage.key(i), createLinks); // create our edit and delete links
 		}
 	}
 	// Link the seperate item to be able to edit and delete seperate for each stored item on the display
 	function makeEditAndDeleteLinks(key, createLinks){
-	// Create the edit items and delet
+	// Create the edit items and delete
 	var editSingleItem = document.createElement('a');
 	editSingleItem.href = "#";
 	editSingleItem.key = key;
@@ -143,7 +152,7 @@ function toggleMyControls(n) {
 	  deleteMyLink.href = "#";
 	  deleteMyLink.key = key;
 	  var deleteMyText = "Delete my faviorate Pizza";
-	  // deleteMyLink.addEventListener("click"), deleteMyFavioratePizza);
+	 deleteMyLink.addEventListener("click", deleteMyFavioratePizza);
 	  deleteMyLink.innerHTML = deleteMyText;
 	  createLinks.appendChild(deleteMyLink); 
 	}
@@ -152,7 +161,7 @@ function toggleMyControls(n) {
 	    // Get information from the faviorate Pizza Storage
 	    var value = localStorage.getItem(this.key);
 	    var item = JSON.parse(value);
-	    
+ 
 	   //Show the form
 	    toggleMyControls("off");
 	    
@@ -173,9 +182,29 @@ function toggleMyControls(n) {
 		
 		$('Pizzalovers').setAttribute("checked", "checked");
 	      }
-	      
+	     // remove the initial listener from the input save contact.
+	     saveData.removeEventListener("click", storeMyData);
+	     //Change Sumbit Button Value to Edit Button
+	    $('submit').value = "Edit Storage";
+	     var editSubmit = $('submit');
+	     //Save the key value established in this funtion as a property of the edit submit event
+	     // so we can use that value when we save the data we edited.
+	     editSubmit.addEventListener("click", InformationIsCorrect);
+	     editSubmit.key = this.key;
 	 }
-	
+	 
+	 function deleteMyFavioratePizza(){
+	  var ask = confirm("Are you sure you want to delete this item?");
+	  if (ask){
+		localStorage.removeItem(this.key);
+		alert("Contact was deleted");
+		window.location.reload();
+	  }else{
+		alert("Contact was Not deleted.")
+	  }
+	}
+		
+	 
 	
 	function clearLocalStorage() {
 		if(localStorage.length === 0){
@@ -184,13 +213,74 @@ function toggleMyControls(n) {
 			localStorage.clear();
 			alert("All the pizza favorates have been cleared");
 			window.location.reload();
-			return false;
-		
+			return false;	
 		}
 	}
+	
+	function InformationIsCorrect(eventData) {
+		// Define elements we want to check
+		var getMyFirstname = $('fname');
+		var getMyLastname = $('lname');
+		var getMyEmail = $('email');
+		
+		// Reset Error Messages
+		errorMessage.innerHTML = "";
+		getMyFirstname.style.border = "2px solid blue";
+		getMyLastname.style.border = "2px solid blue";
+		getMyEmail.style.border = "2px solid blue";
+		
+			// Validating first name
+		var mymessageAry = [ ];
+		//First name Validation
+		if (getMyFirstname.value === ""){
+			var firstNameErrorMessage = "Please enter you first name in the field below";
+			getMyFirstname.style.border = "2px solid red";
+			mymessageAry.push(firstNameErrorMessage);
+		}
+	
+		
+		
+		
+		// Validating last name
+		var mymessageAry = [ ];
+		//Last name Validation
+		if (getMyLastname.value === ""){
+			var lastNameErrorMessage = "Please enter you last name";
+			getMyLastname.style.border = "2px solid red";
+			mymessageAry.push(lastNameErrorMessage);	
+		}
+		// Validating email
+		var regularex = /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+		if (!(regularex.exec(getMyEmail.value))){
+			var myEmailErrorMessage = "Please enter a valid email address.";
+			getMyEmail.style.border = "2px solid red";
+			mymessageAry.push(myEmailErrorMessage);
+		}
+		
+	
+	//If there is an error display them on the screen.
+	if (mymessageAry.length >= 1){
+		for(var i=0, j=mymessageAry.length; i < j; i++) {
+		  var myTxt = document.createElement('li');
+		  myTxt.innerHTML = mymessageAry[i];
+		 errorMessage.appendChild(myTxt); 
+		}
+		eventData.preventDefault();
+	    return false;
+	
+	}else{
+             //If all the fields are correcet then save the data
+	     storeMyData(this.key);
+	     // send the key value with came from the edit data funtion.
+	    
+	  }
+	
+     }
+	
 	// Variables
-	var favioratePizza = ["--How often?--", "Daily", "Weekly", "Monthly", "Ocationaly", "Never", "All the time"],
-	favoritepizza = "No"
+	var     favioratePizza = ["--How often?--", "Daily", "Weekly", "Monthly", "Ocationaly", "Never", "All the time"],
+        	favoritepizza = "No"
+	        errorMessage = $('errors');
 	 ;
 	makePizza();
 
@@ -208,7 +298,7 @@ function toggleMyControls(n) {
 	clear.addEventListener("click", clearLocalStorage);
 	
 	 var saveData =$('submit');
-	 saveData.addEventListener("click", storeMyData);
+	 saveData.addEventListener("click", InformationIsCorrect);
 	
 
 });

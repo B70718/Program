@@ -89,6 +89,14 @@ h1 + h2 {
 	line-height: normal;
 	font-weight: inherit;
 	color: #00F;
+	border-top-style: dotted;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-left-style: dotted;
+	border-top-color: #0F0;
+	border-right-color: #0F0;
+	border-bottom-color: #0F0;
+	border-left-color: #0F0;
 }
 html {
 	background-color: #FFFFFF;
