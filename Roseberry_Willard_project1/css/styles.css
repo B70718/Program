@@ -45,7 +45,7 @@ p {
 	page-break-before: auto;
 }
 h1 {
-	background-color: #0099FF;
+	background-color: #66FFFF;
 	color: #0033FF;
 	font-size: larger;
 	padding: 0.75em;
@@ -61,7 +61,6 @@ h1 {
 	list-style-type: upper-roman;
 	page-break-before: left;
 	border: thin solid #FFF;
-	
 }
 h2 {
 	background-color: #99FFFF;
@@ -81,6 +80,10 @@ h1 + h2 {
 }
 .backgroundcolor {
 	background-color: #CFF;
+	border-top-color: #9FC;
+	border-right-color: #9FC;
+	border-bottom-color: #9FC;
+	border-left-color: #9FC;
 }
 .Willardspizzashop {
 	font-family: "Times New Roman", Times, serif;
@@ -93,17 +96,17 @@ h1 + h2 {
 	border-right-style: dotted;
 	border-bottom-style: dotted;
 	border-left-style: dotted;
-	border-top-color: #0F0;
-	border-right-color: #0F0;
-	border-bottom-color: #0F0;
-	border-left-color: #0F0;
+	border-top-color: #9CF;
+	border-right-color: #9CF;
+	border-bottom-color: #9CF;
+	border-left-color: #9CF;
 }
 html {
 	background-color: #FFFFFF;
 }
 label {
 	font-family: "Times New Roman", Times, serif;
-	color: #03F;
+	color: #639;
 	border-top-color: #9FF;
 	border-right-color: #9FF;
 	border-bottom-color: #9FF;
@@ -113,7 +116,7 @@ label {
 	border-right-style: dotted;
 	border-bottom-style: dotted;
 	border-left-style: dotted;
-	font-size: 16px;
+	font-size: 24px;
 }
 legend {
 	font-family: "Comic Sans MS", cursive;
@@ -127,4 +130,32 @@ fieldset {
 	color: #039;
 	text-align: left;
 	white-space: normal;
+	font-family: "Comic Sans MS", cursive;
+	background-color: #9FF;
+}
+.TheworldsbestPizza {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #609;
+	background-color: #3FF;
+	word-spacing: normal;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #00F;
+	border-right-color: #00F;
+	border-bottom-color: #00F;
+	border-left-color: #00F;
+}
+#pizzaForm #pizzapizza .TheworldsbestPizza {
+	background-color: #00FFCC;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+	color: #C66;
 }

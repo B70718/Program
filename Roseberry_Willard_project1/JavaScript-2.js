@@ -171,8 +171,6 @@ function toggleMyControls(n) {
 	    $('lname').value = item.lname[1];
 	    $('email').value = item.email[1];
 	    var checkbox = document.forms[0].Pizzalovers;
-	    // creating an array to store the boxes the customer has checked with customersCheckedBoxes customersCheckedBoxes
-	    var customersCheckedBoxes = [ ];
 	    for (var i=0; i<checkbox.length; i++){
 		if (checkbox[i].value == "Pizzalovers" && item.Pizzalovers == "Peperoni"){
                    checkbox[i].setAttribute("checked", "checked");
@@ -231,20 +229,20 @@ function toggleMyControls(n) {
 		getMyLastname.style.border = "2px solid blue";
 		getMyEmail.style.border = "2px solid blue";
 		
-		/*	// Validating first name
+			// Validating first name
 		var mymessageAry = [ ];
-		console.log("mymesaageAry" + mymessageAry + " in first name ");
-		console.log("getMyFirstname" + getMyFirstname + " in first name ");
 		//First name Validation
 		if (getMyFirstname.value === ""){
 			var firstNameErrorMessage = "Please enter you first name in the field below";
 			getMyFirstname.style.border = "2px solid red";
 			mymessageAry.push(firstNameErrorMessage);
 		}
-		*/
+	
+		
+		
+		
 		// Validating last name
 		var mymessageAry = [ ];
-		console.log("mymesaageAry" + mymessageAry + " in last name ");
 		//Last name Validation
 		if (getMyLastname.value === ""){
 			var lastNameErrorMessage = "Please enter you last name";
@@ -265,8 +263,7 @@ function toggleMyControls(n) {
 		for(var i=0, j=mymessageAry.length; i < j; i++) {
 		  var myTxt = document.createElement('li');
 		  myTxt.innerHTML = mymessageAry[i];
-		 errorMessage.appendChild(myTxt);
-		  
+		 errorMessage.appendChild(myTxt); 
 		}
 		eventData.preventDefault();
 	    return false;
@@ -305,4 +302,3 @@ function toggleMyControls(n) {
 	
 
 });
-
