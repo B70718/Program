@@ -82,11 +82,11 @@ function toggleMyControls(n) {
 		
 		getCheckboxes();
 		var item           = {};
-	 	item.group         = ["Group", $('groups').value];
+	 	item.group         = ["How often do you eat here?", $('groups').value];
 		item.fname         =["First Name", $('fname').value];
 		item.lname         =["Last Name", $('lname').value];
 		item.email         =["Email:", $('email').value];
-		item.favorite      =["Is a favorite:", favoritepizza];
+		item.favorite      =["Willard's Pizza your faviorate store?", favoritepizza];
 		// Save information into local storage
 		// Use stringify to convert our object to a string.
 		localStorage.setItem(id, JSON.stringify(item));
@@ -171,6 +171,8 @@ function toggleMyControls(n) {
 	    $('lname').value = item.lname[1];
 	    $('email').value = item.email[1];
 	    var checkbox = document.forms[0].Pizzalovers;
+	    // creating an array to store the boxes the customer has checked with customersCheckedBoxes customersCheckedBoxes
+	    var customersCheckedBoxes = [ ];
 	    for (var i=0; i<checkbox.length; i++){
 		if (checkbox[i].value == "Pizzalovers" && item.Pizzalovers == "Peperoni"){
                    checkbox[i].setAttribute("checked", "checked");
@@ -231,18 +233,18 @@ function toggleMyControls(n) {
 		
 			// Validating first name
 		var mymessageAry = [ ];
+		console.log("mymesaageAry" + mymessageAry + " in first name ");
+		console.log("getMyFirstname" + getMyFirstname + " in first name ");
 		//First name Validation
 		if (getMyFirstname.value === ""){
 			var firstNameErrorMessage = "Please enter you first name in the field below";
-			getMyFirstname.style.border = "2px solid red";
+			getMyFirstname.style.border = "4px solid red";
 			mymessageAry.push(firstNameErrorMessage);
 		}
-	
-		
-		
 		
 		// Validating last name
 		var mymessageAry = [ ];
+		console.log("mymesaageAry" + mymessageAry + " in last name ");
 		//Last name Validation
 		if (getMyLastname.value === ""){
 			var lastNameErrorMessage = "Please enter you last name";
@@ -250,7 +252,7 @@ function toggleMyControls(n) {
 			mymessageAry.push(lastNameErrorMessage);	
 		}
 		// Validating email
-		var regularex = /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+		var regularex =          /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
 		if (!(regularex.exec(getMyEmail.value))){
 			var myEmailErrorMessage = "Please enter a valid email address.";
 			getMyEmail.style.border = "2px solid red";
@@ -263,7 +265,8 @@ function toggleMyControls(n) {
 		for(var i=0, j=mymessageAry.length; i < j; i++) {
 		  var myTxt = document.createElement('li');
 		  myTxt.innerHTML = mymessageAry[i];
-		 errorMessage.appendChild(myTxt); 
+		 errorMessage.appendChild(myTxt);
+		  
 		}
 		eventData.preventDefault();
 	    return false;
@@ -302,3 +305,4 @@ function toggleMyControls(n) {
 	
 
 });
+

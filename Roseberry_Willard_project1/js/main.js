@@ -231,7 +231,7 @@ function toggleMyControls(n) {
 		getMyLastname.style.border = "2px solid blue";
 		getMyEmail.style.border = "2px solid blue";
 		
-		/*	// Validating first name
+			// Validating first name
 		var mymessageAry = [ ];
 		console.log("mymesaageAry" + mymessageAry + " in first name ");
 		console.log("getMyFirstname" + getMyFirstname + " in first name ");
@@ -241,7 +241,7 @@ function toggleMyControls(n) {
 			getMyFirstname.style.border = "2px solid red";
 			mymessageAry.push(firstNameErrorMessage);
 		}
-		*/
+		
 		// Validating last name
 		var mymessageAry = [ ];
 		console.log("mymesaageAry" + mymessageAry + " in last name ");
@@ -305,4 +305,3 @@ function toggleMyControls(n) {
 	
 
 });
-
