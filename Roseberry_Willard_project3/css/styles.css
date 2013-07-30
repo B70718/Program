@@ -159,3 +159,19 @@ fieldset {
 	border-left-color: #FFF;
 	color: #C66;
 }
+.Buy {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 36px;
+	background-color: #F00;
+	text-align: center;
+	word-spacing: normal;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #69F;
+	border-right-color: #69F;
+	border-bottom-color: #69F;
+	border-left-color: #69F;
+	cursor: se-resize;
+}

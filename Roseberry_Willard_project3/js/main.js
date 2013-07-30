@@ -86,7 +86,7 @@ function toggleMyControls(n) {
 		item.fname         =["First Name", $('fname').value];
 		item.lname         =["Last Name", $('lname').value];
 		item.email         =["Email:", $('email').value];
-		item.favorite      =["Willard's Pizza your faviorate store?", favoritepizza];
+		item.favorite      =["Is Willard pizza shop your faviorate place to buy pizza?", favoritepizza];
 		// Save information into local storage
 		// Use stringify to convert our object to a string.
 		localStorage.setItem(id, JSON.stringify(item));
@@ -232,19 +232,16 @@ function toggleMyControls(n) {
 		getMyEmail.style.border = "2px solid blue";
 		
 			// Validating first name
-		var mymessageAry = [ ];
-		console.log("mymesaageAry" + mymessageAry + " in first name ");
-		console.log("getMyFirstname" + getMyFirstname + " in first name ");
+		var mymessageAry = [ ];		
 		//First name Validation
 		if (getMyFirstname.value === ""){
 			var firstNameErrorMessage = "Please enter you first name in the field below";
-			getMyFirstname.style.border = "4px solid red";
+			getMyFirstname.style.border = "2px solid red";
 			mymessageAry.push(firstNameErrorMessage);
 		}
 		
 		// Validating last name
 		var mymessageAry = [ ];
-		console.log("mymesaageAry" + mymessageAry + " in last name ");
 		//Last name Validation
 		if (getMyLastname.value === ""){
 			var lastNameErrorMessage = "Please enter you last name";
@@ -252,7 +249,7 @@ function toggleMyControls(n) {
 			mymessageAry.push(lastNameErrorMessage);	
 		}
 		// Validating email
-		var regularex =          /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+		var regularex = /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
 		if (!(regularex.exec(getMyEmail.value))){
 			var myEmailErrorMessage = "Please enter a valid email address.";
 			getMyEmail.style.border = "2px solid red";
@@ -260,8 +257,8 @@ function toggleMyControls(n) {
 		}
 		
 	
-	//If there is an error display them on the screen.
-	if (mymessageAry.length >= 1){
+	        //If there is an error display them on the screen.
+	        if (mymessageAry.length >= 1){
 		for(var i=0, j=mymessageAry.length; i < j; i++) {
 		  var myTxt = document.createElement('li');
 		  myTxt.innerHTML = mymessageAry[i];
@@ -280,29 +277,28 @@ function toggleMyControls(n) {
 	
      }
 	
-	// Variables
-	var     favioratePizza = ["--How often?--", "Daily", "Weekly", "Monthly", "Ocationaly", "Never", "All the time"],
+	 // Variables
+	 var     favioratePizza = ["--How often?--", "Daily", "Weekly", "Monthly", "Ocationaly", "Never", "All the time"],
         	favoritepizza = "No"
 	        errorMessage = $('errors');
 	 ;
-	makePizza();
+	 makePizza();
 
-	//Set link & Clink Events
+	 //Set link & Clink Events
    
-	var triggerMyControls =$('toggle');
-	triggerMyControls.addEventListener("click", toggleMyControls);	
+	 var triggerMyControls =$('toggle');
+	 triggerMyControls.addEventListener("click", toggleMyControls);	
 	
-	var displayLink =$('displayData');
-	displayLink.addEventListener("click", getMyData);
+	 var displayLink =$('displayData');
+	 displayLink.addEventListener("click", getMyData);
 	
 	
-	var clearData =$('clear');
-	//var changeData = $()
-	clear.addEventListener("click", clearLocalStorage);
+	 var clearData =$('clear');
+	 //var changeData = $()
+	 clear.addEventListener("click", clearLocalStorage);
 	
 	 var saveData =$('submit');
 	 saveData.addEventListener("click", InformationIsCorrect);
 	
 
 });
-
