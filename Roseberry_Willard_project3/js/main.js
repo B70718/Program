@@ -99,6 +99,10 @@ function toggleMyControls(n) {
 	
 	function getMyData() {
 		toggleMyControls("on");
+		if (localStorage.length === 0) {
+			alert("There is no data in Local Storeage. I have loaded default data.");
+			getMyDefaultData();
+		} 
 		//Write information for the Local Storeage to the brower.
 		var makeDiv = document.createElement('div');
 		makeDiv.setAttribute("id", "items");
@@ -118,9 +122,12 @@ function toggleMyControls(n) {
 			var obj = JSON.parse(value);
 		        var makeSubLink = document.createElement('ul');
 			makeli.appendChild(makeSubLink);
+			// Makeing a sublist image dynamicly for each catagory of the list
+			getMyCustomImage(makeSubLink);
+			getMyCustomImage(obj.groups[1], makeSublist);
 			for (var n in obj) {
 				var makeSubli = document.createElement('li');
-				makeSubLink.appendChild(makeSubli);
+		 		makeSubLink.appendChild(makeSubli);
 				var optSubText = obj[n][0]+" "+obj[n][1];
 				makeSubli.innerHTML = optSubText;
 				makeSubLink.appendChild(createLinks);
@@ -128,6 +135,17 @@ function toggleMyControls(n) {
 			}
 			 makeEditAndDeleteLinks(localStorage.key(i), createLinks); // create our edit and delete links
 		}
+	}
+	//Get the image for the right category that is being displayed
+	function getMyCustomImage(pictureName, makeSubLink) {
+		var createLinks = document.createElement('li');
+		makeSubLink.appendChild(createLinks);
+		var newImg = document.createElement('img');
+		var setSrc = newImg.setAttribute("src", "images/images/"+ pictureName + ".png");
+		createLinks.appendChild(newImg);
+		
+		
+		
 	}
 	// Link the seperate item to be able to edit and delete seperate for each stored item on the display
 	function makeEditAndDeleteLinks(key, createLinks){
@@ -193,6 +211,18 @@ function toggleMyControls(n) {
 	     // so we can use that value when we save the data we edited.
 	     editSubmit.addEventListener("click", InformationIsCorrect);
 	     editSubmit.key = this.key;
+	 }
+	 
+	 //Default Data for local Store to make testing the program easier to test without haveing
+	 //To populate the form with information all the time.
+	 function getMyDefaultData() {
+		//The file is comeing from out jason file that is loaded by our HTML page.
+		for (var n in json) {
+	            var id = Math.floor(Math.random()*1000000001);
+		    localStorage.setItem(id, JSON.stringify(json[n]));
+			//code
+		}
+		
 	 }
 	 
 	 function deleteMyFavioratePizza(){
@@ -278,7 +308,7 @@ function toggleMyControls(n) {
      }
 	
 	 // Variables
-	 var     favioratePizza = ["--How often?--", "Daily", "Weekly", "Monthly", "Ocationaly", "Never", "All the time"],
+	 var     favioratePizza = ["--How often?--", "Daily", "Weekly", "Monthly"],
         	favoritepizza = "No"
 	        errorMessage = $('errors');
 	 ;
