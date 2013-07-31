@@ -113,6 +113,7 @@ function toggleMyControls(n) {
 		document.body.appendChild(makeDiv);
 		$('items').style.display = "block";
 		for (var i = 0, len =localStorage.length; i<len;i++) {
+			console.log("localStorge.length ="+ i +"")
 			var makeli = document.createElement('li');
 			var createLinks = document.createElement('li');
 			makeList.appendChild(makeli);
@@ -123,8 +124,8 @@ function toggleMyControls(n) {
 		        var makeSubLink = document.createElement('ul');
 			makeli.appendChild(makeSubLink);
 			// Makeing a sublist image dynamicly for each catagory of the list
-			getMyCustomImage(makeSubLink);
-			getMyCustomImage(obj.groups[1], makeSublist);
+			getMyCustomImage(obj.groups[1],makeSubLink);
+			console.log("groups")+ groups[1] + makeSubLink + " makesublink here";
 			for (var n in obj) {
 				var makeSubli = document.createElement('li');
 		 		makeSubLink.appendChild(makeSubli);
@@ -141,7 +142,7 @@ function toggleMyControls(n) {
 		var createLinks = document.createElement('li');
 		makeSubLink.appendChild(createLinks);
 		var newImg = document.createElement('img');
-		var setSrc = newImg.setAttribute("src", "images/images/"+ pictureName + ".png");
+		var setSrc = newImg.setAttribute("src", "images/"+ pictureName + ".png");
 		createLinks.appendChild(newImg);
 		
 		
@@ -308,7 +309,7 @@ function toggleMyControls(n) {
      }
 	
 	 // Variables
-	 var     favioratePizza = ["--How often?--", "Daily", "Weekly", "Monthly"],
+	 var     favioratePizza = ["--How often?--", "Daily", "Weekly", "Monthly", "Ocaionaly", "Never", "All_the_time"],
         	favoritepizza = "No"
 	        errorMessage = $('errors');
 	 ;
