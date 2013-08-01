@@ -82,7 +82,7 @@ function toggleMyControls(n) {
 		
 		getCheckboxes();
 		var item           = {};
-	 	item.group         = ["How often do you eat here?", $('groups').value];
+	 	item.groups         = ["How often do you eat here?", $('groups').value];
 		item.fname         =["First Name", $('fname').value];
 		item.lname         =["Last Name", $('lname').value];
 		item.email         =["Email:", $('email').value];
@@ -237,7 +237,7 @@ function toggleMyControls(n) {
 	    toggleMyControls("off");
 	    
 	    //populate the form field with the current localStorage values.
-	    $('groups').value = item.group[1];
+	    $('groups').value = item.groups[1];
 	    $('fname').value = item.fname[1];
 	    $('lname').value = item.lname[1];
 	    $('email').value = item.email[1];
