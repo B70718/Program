@@ -148,6 +148,58 @@ function toggleMyControls(n) {
 		
 		
 	}
+	
+	//seperate add image funtion to seperate the defalt information from the rest of the data
+	function getMyNewImage() {
+		toggleMyControls("on");
+		if (localStorage.length === 0) {
+			alert("There is no data in Local Storeage. I have loaded default data.");
+			getMyDefaultData();
+		} 
+		//Write information for the Local Storeage to the brower.
+		var makeDiv = document.createElement('div');
+		makeDiv.setAttribute("id", "items");
+		var makeList = document.createElement('ul');
+		makeDiv.appendChild(makeList);
+		// document.body is writeing the user contents to the screen
+		// for the user to see.
+		document.body.appendChild(makeDiv);
+		$('items').style.display = "block";
+		for (var i = 0, len =localStorage.length; i<len;i++) {
+			console.log("localStorge.length ="+ i +"")
+			var makeli = document.createElement('li');
+			var createLinks = document.createElement('li');
+			makeList.appendChild(makeli);
+			var key = localStorage.key(i);
+			var value = localStorage.getItem(key);
+			// make from string to an object using json
+			var obj = JSON.parse(value);
+		        var makeSubLink = document.createElement('ul');
+			makeli.appendChild(makeSubLink);
+			// Makeing a sublist image dynamicly for each catagory of the list
+			getMyCustomImage(obj.groups[1],makeSubLink);
+			console.log("groups")+ groups[1] + makeSubLink + " makesublink here";
+			for (var n in obj) {
+				var makeSubli = document.createElement('li');
+		 		makeSubLink.appendChild(makeSubli);
+				var optSubText = obj[n][0]+" "+obj[n][1];
+				makeSubli.innerHTML = optSubText;
+				makeSubLink.appendChild(createLinks);
+		
+			}
+			 makeEditAndDeleteLinks(localStorage.key(i), createLinks); // create our edit and delete links
+		}
+	}
+	//Get the image for the right category that is being displayed
+	function getMyCustomImage(pictureName, makeSubLink) {
+		var createLinks = document.createElement('li');
+		makeSubLink.appendChild(createLinks);
+		var newImg = document.createElement('img');
+		var setSrc = newImg.setAttribute("src", "images/"+ pictureName + ".png");
+		createLinks.appendChild(newImg);
+		
+	}		
+	
 	// Link the seperate item to be able to edit and delete seperate for each stored item on the display
 	function makeEditAndDeleteLinks(key, createLinks){
 	// Create the edit items and delete
