@@ -102,7 +102,8 @@ h1 + h2 {
 	border-left-color: #9CF;
 }
 html {
-	background-color: #FFFFFF;
+	background-color: #99F;
+	color: #FFF;	
 }
 label {
 	font-family: "Times New Roman", Times, serif;
@@ -139,17 +140,11 @@ fieldset {
 	font-weight: bold;
 	font-variant: normal;
 	text-transform: capitalize;
-	color: #609;
-	background-color: #3FF;
+	color: #60F;
+	background-color: #FFF;
 	word-spacing: normal;
-	border-top-style: solid;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-color: #00F;
-	border-right-color: #00F;
-	border-bottom-color: #00F;
-	border-left-color: #00F;
+	border: thick solid #00F;
+	cursor: pointer;
 }
 #pizzaForm #pizzapizza .TheworldsbestPizza {
 	background-color: #00FFCC;
@@ -174,4 +169,8 @@ fieldset {
 	border-bottom-color: #69F;
 	border-left-color: #69F;
 	cursor: se-resize;
+}
+.designtouchup {
+	background-color: #0CF;
+	border: medium dotted #39F;
 }
