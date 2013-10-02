@@ -1,0 +1,38 @@
+@charset "UTF-8";
+#Mecai {
+	font-family: "Comic Sans MS", cursive;
+	background-color: #F69;
+	border-top-color: #F33;
+	border-right-color: #F33;
+	border-bottom-color: #F33;
+	border-left-color: #F33;
+	font-size: 36px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: 36;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #06F;
+	border-top-style: dotted;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-left-style: dotted;
+	position: fixed;
+	width: auto;
+	text-align: center;
+}
+Nimaeht {
+	background-color: #6FF;
+	border: medium dashed #0CF;
+	list-style-type: circle;
+}
+#Mecai {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 24px;
+	font-style: normal;
+	line-height: normal;
+	background-color: #3FF;
+	background-image: url(Images_mecai/Lolt.jpg);
+	word-spacing: normal;
+	border: medium solid #CFF;
+}
