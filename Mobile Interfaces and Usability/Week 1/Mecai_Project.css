@@ -13,22 +13,17 @@
 	font-variant: normal;
 	text-transform: capitalize;
 	color: #06F;
-	border-top-style: dotted;
-	border-right-style: dotted;
-	border-bottom-style: dotted;
-	border-left-style: dotted;
-	position: fixed;
-	width: auto;
+	
 	text-align: center;
 }
 Nimaeht {
-	background-color: #6FF;
+	background-color: #9CF;
 	border: medium dashed #0CF;
 	list-style-type: circle;
 }
 #Mecai {
 	font-family: "Comic Sans MS", cursive;
-	font-size: 24px;
+	font-size: 36px;
 	font-style: normal;
 	line-height: normal;
 	background-color: #3FF;
