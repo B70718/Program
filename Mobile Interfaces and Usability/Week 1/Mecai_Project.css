@@ -31,3 +31,19 @@ Nimaeht {
 	word-spacing: normal;
 	border: medium solid #CFF;
 }
+
+#Mecai #id h4 {
+	background-color: #3F6
+}
+#target {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 900;
+	font-variant: small-caps;
+	text-transform: capitalize;
+	color: #0000FF;
+	text-decoration: underline;
+	background-color: #F00;
+}
+

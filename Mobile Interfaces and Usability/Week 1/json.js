@@ -2,13 +2,13 @@
  
 
 var json = {
-    "favioratePizza": {
-        "groups": ["How often do you eat here?", "Weekly"],
+    "faviorateCreature": {
+        "groups": ["How often do you visit this website?", "Weekly"],
          "fname": ["First Name", "Rosella"],
             "lname": ["Last Name", "Roseberry"],
           "email": ["Email:", "rosella@gmail.com"],
-           "notes": ["Notes:", "Awesome Pizza!!"],
-         "favorite": ["Is Willard pizza shop your faviorate place to buy pizza?", "Yes"]
+           "notes": ["Notes:", "Nice looking Creature!!"],
+         "favorite": ["Do you like this creature shop", "Yes"]
     },
     "favioratePizza1": {
         "groups": ["How often do you eat here?", "Monthly"],
