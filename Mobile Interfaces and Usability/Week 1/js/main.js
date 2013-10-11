@@ -23,15 +23,15 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	
 	function getCheckedboxValue(){
-		if($('fav').checked){
-			favoriteValue = $('fav').value;
+		if(au('fav').checked){
+			favoriteValue = au('fav').value;
 			}else{
 				favoriteValue = "No"
 			}
 	}
 	
 	//getElementById Function
-	function $(x){
+	function au(x){
 		var theElement = document.getElementById(x);
 		return theElement;
 	}
@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	     //Create  first select field element and populate with options.
         function makeCreatures() {
             var formTag = document.getElementsByTagName("form"), // form Tag is an arroy of all the form Tags.
-            selectLi = $('selectcreatures'),
+            selectLi = au('selectcreatures'),
             makeselectcreatures = document.createElement('select');
             makeselectcreatures.setAttribute("id", "groups");
         for(var i = 0, j=creaturePictures.length; i<j; i++) {
@@ -57,7 +57,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	// Make a 2nd select field 
 	function makePizza(){
 		var formTag = document.getElementsByTagName("form"),
-		selectLi = $('select'), 
+		selectLi = au('select'), 
 		makeSelect = document.createElement('select');
 	 	makeSelect.setAttribute("id", "groups"); 
 	    for(var i = 0, j = favioratePizza.length; i<j; i++){
@@ -73,8 +73,8 @@ window.addEventListener("DOMContentLoaded", function(){
 
 // find value of the checkboxes
 function getCheckboxes() {
-if ($('favoritepizza').checked){
-	favoritepizza = $('favoritepizza').value;
+if (au('favoritepizza').checked){
+	favoritepizza = au('favoritepizza').value;
 	
 	
   }else{
@@ -87,17 +87,17 @@ function toggleMyControls(n) {
 	switch(n) {
 		case "on":
 		
-		$('pizzaForm').style.display = "none";
-		$('clear').style.display = "inline";
-		$('toggle').style.display = "inline";
-		$('displayData').style.display = "none";
+		au('pizzaForm').style.display = "none";
+		au('clear').style.display = "inline";
+		au('toggle').style.display = "inline";
+		au('displayData').style.display = "none";
 		
 		break;
 	        case "off":
-		$('pizzaForm').style.display = "block";
-		$('clear').style.display = "inline";
-		$('toggle').style.display = "block";
-		$('displayData').style.display = "block";
+		au('pizzaForm').style.display = "block";
+		au('clear').style.display = "inline";
+		au('toggle').style.display = "block";
+		au('displayData').style.display = "block";
 		 
 		break;
 	     default:
@@ -123,12 +123,12 @@ function toggleMyControls(n) {
 		
 		getCheckboxes();
 		var item           = {};
-	 	item.groups        =["How often do you eat here?", $('groups').value];
-		item.iq            =["IQ", $('iq').value];
-		item.fname         =["First Name", $('fname').value];
-		item.lname         =["Last Name", $('lname').value];
-		item.email         =["Email:", $('email').value];
-		item.notes         =["Notes:", $('notes').value];
+	 	item.groups        =["How often do you eat here?", au('groups').value];
+		item.iq            =["IQ", au('iq').value];
+		item.fname         =["First Name", au('fname').value];
+		item.lname         =["Last Name", au('lname').value];
+		item.email         =["Email:", au('email').value];
+		item.notes         =["Notes:", au('notes').value];
 		item.favorite      =["Is Willard pizza shop your faviorate place to buy pizza?", favoritepizza];
 		item.gender        =["Gender:", genderValue];
 	
@@ -156,7 +156,7 @@ function toggleMyControls(n) {
 		// document.body is writeing the user contents to the screen
 		// for the user to see.
 		document.body.appendChild(makeDiv);
-		$('items').style.display = "block";
+		au('items').style.display = "block";
 		for (var i = 0, len =localStorage.length; i<len;i++) {
 			console.log("localStorge.length ="+ i +"")
 			var makeli = document.createElement('li');
@@ -209,7 +209,7 @@ function toggleMyControls(n) {
 		// document.body is writeing the user contents to the screen
 		// for the user to see.
 		document.body.appendChild(makeDiv);
-		$('items').style.display = "block";
+		au('items').style.display = "block";
 		for (var i = 0, len =localStorage.length; i<len;i++) {
 			console.log("localStorge.length ="+ i +"")
 			var makeli = document.createElement('li');
@@ -282,12 +282,12 @@ function toggleMyControls(n) {
 	    toggleMyControls("off");
 	    
 	    //populate the form field with the current localStorage values.
-	    $('groups').value = item.groups[1];
-		$('iq').value = item.groups[1];
-	    $('fname').value = item.fname[1];
-	    $('lname').value = item.lname[1];
-	    $('email').value = item.email[1];
-		$('notes').value = item.notes[1];
+	    au('groups').value = item.groups[1];
+		au('iq').value = item.groups[1];
+	    au('fname').value = item.fname[1];
+	    au('lname').value = item.lname[1];
+	    au('email').value = item.email[1];
+		au('notes').value = item.notes[1];
 	    var checkbox = document.forms[0].Pizzalovers;
 		var radios = document.forms[0].gender;
 	    // creating an array to store the boxes the customer has checked with customersCheckedBoxes customersCheckedBoxes
@@ -301,13 +301,13 @@ function toggleMyControls(n) {
 	      }
 	      if (item.favorite[1] == "Yes") {
 		
-		$('Pizzalovers').setAttribute("checked", "checked");
+		au('Pizzalovers').setAttribute("checked", "checked");
 	      }
 	     // remove the initial listener from the input save contact.
 	     saveData.removeEventListener("click", storeMyData);
 	     //Change Sumbit Button Value to Edit Button
-	    $('submit').value = "Edit Storage";
-	     var editSubmit = $('submit');
+	    au('submit').value = "Edit Storage";
+	     var editSubmit = au('submit');
 	     //Save the key value established in this funtion as a property of the edit submit event
 	     // so we can use that value when we save the data we edited.
 	     editSubmit.addEventListener("click", InformationIsCorrect);
@@ -362,9 +362,9 @@ function toggleMyControls(n) {
 	
 	function InformationIsCorrect(eventData) {
 		// Define elements we want to check
-		var getMyFirstname = $('fname');
-		var getMyLastname = $('lname');
-		var getMyEmail = $('email');
+		var getMyFirstname = au('fname');
+		var getMyLastname = au('lname');
+		var getMyEmail = au('email');
 		
 		// Reset Error Messages
 		errorMessage.innerHTML = "";
@@ -421,7 +421,7 @@ function toggleMyControls(n) {
 	 // Variables
 	 var     favioratePizza = ["--How often?--", "Daily", "Weekly", "Monthly", "Ocaionaly", "Never", "All_the_time"],
         	genderValue = "No"
-	        errorMessage = $('errors');
+	        errorMessage = au('errors');
 	 ;
 	 makePizza();
          
@@ -432,25 +432,25 @@ function toggleMyControls(n) {
 
 	 //Set link & Clink Events
    
-	 var triggerMyControls =$('toggle');
+	 var triggerMyControls =au('toggle');
 	 triggerMyControls.addEventListener("click", toggleMyControls);	
 	
-	 var displayLink =$('displayData');
+	 var displayLink =au('displayData');
 	 displayLink.addEventListener("click", getMyData);
 	
 	
-	 var clearData =$('clear');
-	 //var changeData = $()
+	 var clearData =au('clear');
+	 //var changeData = au()
 	 clear.addEventListener("click", clearLocalStorage);
 	
-	 var saveData =$('submit');
+	 var saveData =au('submit');
 	 saveData.addEventListener("click", InformationIsCorrect);
 	 
 	 //Console.log output
 		say("hello is this working with a funtion");
 		console.log("is this working the real console.log");
 	//Set checkbox & Radio Click Events: Attach event listener to each radio & checkobx.
-	var checkbox = $('favoritePizza');
+	var checkbox = au('favoritePizza');
 //	checkbox.addEventListener("click", getCheckboxes);
 //	radios[i].addEventListener("click", getSelectedRadio);
 	var radios = document.forms[0].gender;
