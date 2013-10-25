@@ -1,0 +1,28 @@
+/*  custom styles */
+
+label.error{display:block; margin:10px 0; color: #3FC#cc0000;}
+
+
+
+body {
+	background-color: #CFC;
+}
+body {
+	background-color: #3CF;
+}
+.Intro {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 36pt;
+	font-weight: bold;
+	color: #00F;
+}
+.fantacy {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 24px;
+	color: #993399;
+}
+.Welcome {
+	color: #36F;
+	font-family: "Comic Sans MS", cursive;
+	font-size: 36px;
+}
